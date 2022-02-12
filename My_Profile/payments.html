@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ecommerce Website</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous">
+    </script>
+
+
+    <!--Google Fonts Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&family=Open+Sans:wght@300;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!--Font Awesome Link-->
+    <script src="https://kit.fontawesome.com/02c69b64af.js" crossorigin="anonymous"></script>
+    <!--External CSS-->
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
+    </script>
+
+
+    <div class="fluid-container">
+
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow mb-auto bg-white fixed-top">
+
+            <a class="navbar-brand" href="../index.html">
+
+                <img src="../images/Logo.svg" width="110rem" height="auto" alt="">
+
+            </a>
+
+            <!--Button Toggler-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 1rem;">
+
+                <ul class="navbar-nav ml-auto px-auto  align-items-center">
+
+                    <li class="nav-item ">
+
+                        <a class="nav-link" href=""><i class="fas fa-shopping-cart pr-2"></i>My cart</a>
+
+                    </li>
+                    <hr>
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="favorites.html"><i class="fas fa-heart pr-2"></i>Favorites</a>
+
+                    </li>
+                    <hr>
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="notifications.html"><i class="fas fa-bell pr-2"></i>Notifications</a>
+
+                    </li>
+                    <hr>
+                    <li class="nav-item active">
+
+                        <a class="nav-link" href="../My_Profile/index.html"><i class="fas fa-user pr-2"></i>My
+                            Profile</a>
+
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+        <br>
+        <br>
+
+        <main class="container rounded-2 mt-4">
+
+
+            <!--Breadcrumb and Sort-->
+
+            <div
+                class="col-lg-12 col-md-12 col-12 justify-content-lg-center align-items-lg-center justify-content-center align-items-center">
+
+                <div class="row p-4">
+                    <div class=" col-md-8 col-8 col-lg-8 align-items-lg-start justify-content-lg-start"
+                        style="float: left;">
+                        <h4 style="font-weight: bold;">Profile Details</h4>
+                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="../My_Profile/index.html">Profile</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Payments</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-4 align-items-lg-end justify-content-lg-end pr-4">
+
+                        <button style="float: right;" class="btn btn-lg w-auto shadow">Add New Payment Method</button>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--Card 1-->
+            <div class="container">
+
+                <div class="mt-4 col-lg-12 col-md-12 col-12 jumbotron shadow">
+
+
+                    <div class="row col-lg-12 bg-white align-items-lg-center align-items-center mx-auto"
+                        style="z-index: 999;">
+
+                        <div class="col-lg-2 col-md-2 col-2">
+                            <img src="../images/icons/visa.svg" alt="" srcset="">
+                            <!-- <img src="" alt="" style="width: 128px; height: auto;"><i class="fas fa-camera" style="z-index: 9; margin: 20px; color: rgb(109, 231, 150);"></i></img> -->
+                        </div>
+
+                        <div class="col-lg-6 col-md-4 col-4">
+
+                            <h4 class="card-title" style="font-weight: bold;">**********5913</h4>
+                            <h5 class="card-title" style="font-weight: 600; color: #53B175;">Expires 16/11</h5>
+
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-4">
+                            <a href=""><i class="fas fa-trash fa-2x" style="float: right; color: #FF6363;"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Card 2-->
+            <div class="container">
+
+                <div class="mt-4 col-lg-12 col-md-12 col-12 jumbotron shadow">
+
+
+                    <div class="row col-lg-12 bg-white align-items-lg-center align-items-center mx-auto"
+                        style="z-index: 999;">
+
+                        <div class="col-lg-2 col-md-2 col-2">
+                            <img src="../images/icons/mastercard.svg" alt="" srcset="">
+                            <!-- <img src="" alt="" style="width: 128px; height: auto;"><i class="fas fa-camera" style="z-index: 9; margin: 20px; color: rgb(109, 231, 150);"></i></img> -->
+                        </div>
+
+                        <div class="col-lg-6 col-md-4 col-4">
+
+                            <h4 class="card-title" style="font-weight: bold;">**********5913</h4>
+                            <h5 class="card-title" style="font-weight: 600; color: #53B175;">Expires 16/11</h5>
+
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-4">
+                            <a href=""><i class="fas fa-trash fa-2x" style="float: right; color: #FF6363;"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--Card 3-->
+            <div class="container">
+
+                <div class="mt-4 col-lg-12 col-md-12 col-12 jumbotron shadow">
+
+
+                    <div class="row col-lg-12 bg-white align-items-lg-center align-items-center mx-auto"
+                        style="z-index: 999;">
+
+                        <div class="col-lg-2 col-md-2 col-2">
+                            <img src="../images/icons/mastercard.svg" alt="" srcset="">
+                            <!-- <img src="" alt="" style="width: 128px; height: auto;"><i class="fas fa-camera" style="z-index: 9; margin: 20px; color: rgb(109, 231, 150);"></i></img> -->
+                        </div>
+
+                        <div class="col-lg-6 col-md-4 col-4">
+
+                            <h4 class="card-title" style="font-weight: bold;">**********5913</h4>
+                            <h5 class="card-title" style="font-weight: 600; color: #53B175;">Expires 16/11</h5>
+
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-4">
+                            <a href=""><i class="fas fa-trash fa-2x" style="float: right; color: #FF6363;"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Pagination-->
+
+            <div class="container">
+                <nav aria-label="Page navigation example col-12 col-lg-6 mb-2 p-2">
+                    <ul
+                        class="list-group list-group-horizontal mt-2 mb-2 justify-content-center align-items-center justify-content-lg-end align-items-lg-end">
+                        <li class="list-group-item"><i class="fa fa-angle-double-left"></i></li>
+                        <li class="list-group-item" style="color: #53B175; font-weight: bold;">1</li>
+                        <li class="list-group-item bg_info text-white">2</li>
+                        <li class="list-group-item" style="color: #53B175; font-weight: bold;">3</li>
+                        <li class="list-group-item" style="color: #53B175; font-weight: bold;">4</li>
+                        <li class="list-group-item"><i class="fa fa-angle-double-right"></i></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+            <!--Current Method-->   
+
+            <div class="col-lg-12 col-md-12 col-12 justify-content-lg-start justify-content-start">
+                <h4>Current Payment Method</h4>
+            </div>
+
+            <div class="container">
+
+                <div class="mt-4 col-lg-12 col-md-12 col-12 jumbotron shadow">
+
+
+                    <div class="row col-lg-12 bg-white align-items-lg-center align-items-center mx-auto"
+                        style="z-index: 999;">
+
+                        <div class="col-lg-2 col-md-2 col-2">
+                            <img src="../images/icons/money.svg" alt="" srcset="">
+                            <!-- <img src="" alt="" style="width: 128px; height: auto;"><i class="fas fa-camera" style="z-index: 9; margin: 20px; color: rgb(109, 231, 150);"></i></img> -->
+                        </div>
+
+                        <div class="col-lg-6 col-md-4 col-4">
+
+                            <h4 class="card-title" style="font-weight: bold;">Pay on Delivery</h4>
+                            <h5 class="card-title" style="font-weight: 600; color: #53B175;">Contactless Delivery</h5>
+
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-4">
+                            <a href=""><i class="fas fa-check-square fa-2x" style="float: right; color: #53B175;"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            
+
+        </main>
+
+
+        <!--Footer-->
+
+        <footer class="footer-panel d-sm-none d-lg-block d-md-block">
+
+            <div class="container py-5 my-5">
+
+                <div class="row py-3">
+                    <div class="col-lg-4 col-md-6 col-12 mb-lg-0">
+                        <h6 class="mb-2"><img src="../images/Logo_footer.svg" width="256px" height="auto" alt=""></h6>
+                        <p class="text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
+                            suscipit
+                            lobortis quis sit sem facilisi. Bibendum cras ut sit massa leo vel scelerisque turpis.
+                            Mauris pretium
+                            ornare egestas ultricies. Velit rhoncus, bibendum proin fames nulla penatibus facilisis
+                            elementum. Est,
+                            massa tellus viverra penatibus. Morbi adipiscing lectus nec sagittis lorem. Congue cursus
+                            ornare gravida
+                            egestas aenean vel lacus. </p>
+                        <p class="text-white mb-4"><span style="font-weight: bold;">Toll Free number:</span> (239)
+                            555-0108</p>
+
+                        <!-- <ul class="list-inline mt-4">
+              <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i
+                    class="fa-2x fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i
+                    class="fab fa-2x fa-facebook-f"></i></a></li>
+              <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i
+                    class="fab fa-2x fa-instagram"></i></a></li>
+              <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i
+                    class="fab fa-2x fa-youtube"></i></a></li>
+              <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i
+                    class="fab fa-2x fa-google"></i></a></li>
+            </ul> -->
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4 mt-4 mb-lg-0">
+                        <h6 class="text-uppercase font-weight-bold mb-4">Useful Links</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2"><a href="#" class="text-white">Contact Us</a></li>
+                            <li class="mb-2"><a href="#" class="text-white">About Us</a></li>
+                            <li class="mb-2"><a href="#" class="text-white">Stories</a></li>
+                            <li class="mb-2"><a href="#" class="text-white">Press</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4 mt-4 mb-lg-0">
+                        <h6 class="text-uppercase font-weight-bold mb-4">Help</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2 footer-color"><a href="#" class="text-white">Payments</a></li>
+                            <li class="mb-2 footer-color"><a href="#" class="text-white">Shipping</a></li>
+                            <li class="mb-2 footer-color"><a href="#" class="text-white">Cancellation</a></li>
+                            <li class="mb-2 footer-color"><a href="#" class="text-white">Returns</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4 mt-4 mb-lg-0">
+                        <h6 class="text-uppercase font-weight-bold mb-4">Policy</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2 footer-color"><a href="#" class="text-white">Return Policy</a></li>
+                            <li class="mb-2 footer-color"><a href="#" class="text-white">Terms Of Use</a></li>
+                            <li class="mb-2 footer-color"><a href="#" class="text-white">Security</a></li>
+                            <li class="mb-2 footer-color"><a href="#" class="text-white">Privacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4  mt-4 mb-lg-0">
+                        <h6 class="text-uppercase font-weight-bold mb-4">Company</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2 footer-color"><a href="#" class="text-white">Login</a></li>
+                            <li class="mb-2 footer-color"><a href="#" class="text-white">Register</a></li>
+                            <li class="mb-2 footer-color"><a href="#" class="text-white">Sitemap</a></li>
+                            <li class="mb-2 footer-color"><a href="#" class="text-white">Our Products</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr class="p-0 m-0 b-0">
+
+            <div class="py-2 mb-8 col-12 col-lg-12">
+                <div class="container text-center text-lg-center">
+                    <p class="text-white  font-weight-bold mb-10 py-2"><span>MyMarket 2021. All Rights reserved</span>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

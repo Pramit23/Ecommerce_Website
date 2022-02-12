@@ -1,0 +1,212 @@
+body {
+
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(18deg, rgba(251, 253, 255, 1) 1%, rgba(250, 252, 254, 1) 100%);
+
+}
+
+
+/*Dropdown Menu*/
+
+.dropdown {
+
+    position: relative !important;
+
+}
+
+.dropdown-menu {
+
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    margin: 2px !important;
+    width: 100% !important;
+
+}
+
+/* Carousel */
+
+.carousel-item {
+
+    height: 400px;
+
+}
+
+.img-fluid {
+
+    height: 100vh;
+    min-height: 50vh;
+    position: absolute;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+
+/* Cards */
+
+.card-header {
+
+    /* min-height: auto; */
+    margin: auto;
+    background-color: white;
+    color: white;
+
+}
+
+.card_img {
+
+    background-size: cover;
+    padding: 2rem;
+}
+
+.card {
+
+    border-radius: 16px;
+    border: 1px solid #cccccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.25rem;
+    
+    /* box-sizing: border-box; */
+    width: 15rem;
+    height: auto;
+    transition: all linear 200ms;
+
+}
+
+.card-img {
+
+    width: 100%;
+    height: 7rem;
+    object-fit: cover;
+
+}
+
+.card:hover {
+
+    transform: scale(1.0);
+    transition: all linear 200ms;
+    z-index: 1;
+    box-shadow: 1px 1px 10px rgba(58, 58, 58, 0.3);
+    cursor: pointer;
+
+}
+
+.card-footer {
+
+    /* min-height: auto; */
+    /* margin-top:4rem;
+    margin-bottom:4rem; */
+    background-color: white;
+    color: white;
+
+}
+
+
+/* Paginataion */
+
+.list-group-item {
+    border-radius: 50% !important;
+    fill: #fff;
+    border-color: #53B175;
+    border-radius: 2rem;
+    margin: 5px;
+    padding: auto;
+    cursor: pointer;
+    text-shadow: black;
+}
+
+.bg_info {
+
+    background-color: #53B175;
+    font-weight: bold;
+    border-color: #53B175;
+    border-radius: 2rem;
+}
+
+.list-group-item:hover {
+
+    background: #65c287;
+    color: rgb(255, 255, 255);
+
+}
+
+.fa {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/* Jumbotron */
+
+.jumbotron {
+
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding:2rem;
+
+}
+
+
+/* Buttons */
+
+.btn-lg {
+
+    color: white;
+    background-color: #53B175;
+    font-weight: bold;
+    stroke: #53B175;
+
+
+}
+
+.btn-lg:hover {
+
+    color: white;
+    background-color: #65c287;
+    font-weight: bold;
+
+}
+
+
+/* Btn container */
+
+.Btn-container {
+
+    width: 150px;
+
+}
+
+.Btn {
+
+    display: block;
+    height: 3.75rem;
+    border-radius: .50rem;
+   
+  }
+ 
+
+/* Breadcrumbs */
+
+.breadcrumb-item + .breadcrumb-item::before {
+    
+    content: ".";
+    
+}
+
+
+/* Footer */
+
+.footer-panel {
+
+    background-color: #05220E;
+    color: #FFFFFF !important;
+
+
+}
