@@ -66,18 +66,18 @@
 
                     <div
                         class="navbar-nav justify-content-center align-items-center justify-content-lg-end flex-grow-1 px-auto mt-2">
-                        <a class="nav-item nav-link active fw-bold fs-6" aria-current="page" href="#">
+                        <a class="nav-item nav-link active fw-bold fs-6" aria-current="page" href="cart.html">
                             <i class="fas fa-shopping-cart pr-2"></i> My Cart</a>
                         <hr class="bg-black">
-                        <a class="nav-item nav-link fw-regular text-black fs-6" href="#"><i
+                        <a class="nav-item nav-link fw-regular text-black fs-6" href="favorites.html"><i
                                 class="fas fa-heart pr-2"></i>
                             Favorites</a></a>
                         <hr class="bg-black">
-                        <a class="nav-item nav-link fw-regular text-black fs-6" href="#"><i
+                        <a class="nav-item nav-link fw-regular text-black fs-6" href="notifications.html"><i
                                 class="fas fa-bell pr-2"></i>
                             Notifications</a>
                         <hr class="bg-black">
-                        <a class="nav-item nav-link fw-regular text-black fs-6" href="#"><i
+                        <a class="nav-item nav-link fw-regular text-black fs-6" href="My_Profile/index.html"><i
                                 class="fas fa-user pr-2"></i> My
                             Profile</a>
                     </div>
@@ -105,22 +105,25 @@
 
                     <!-- Product image -->
 
-                    <div class="col-lg-4 col-12 p-4 align-items-center justify-content-center my-2 mx-auto">
+                    <div class="col-lg-4 col-12 p-4 align-items-center justify-content-center my-2 mx-auto h-100">
 
-                        <div class="col-12 col-lg-12 bg-white p-4 mb-3 shadow">
-                            <a href="#"><img src="images/items/orange.png" alt=""></a>
+                        <div class="col-12 col-lg-12 bg-white p-4 mb-3 shadow-sm product-image mx-auto">
+
                         </div>
 
                         <div class="row col-12 my-2 mx-auto">
 
-                            <a href="#" class="col-4 border border-success rounded-3">
-                                <img src="images/items/orange.png" alt="" width="48px" height="auto">
+                            <a href="#" class="col-4">
+                                <img src="images/items/orange.png" class="img-thumbnail p-2" alt="" width="48px"
+                                    height="auto">
                             </a>
-                            <a href="#" class="col-4 border border-success rounded-3">
-                                <img src="images/items/orange.png" alt="" width="48px" height="auto">
+                            <a href="#" class="col-4">
+                                <img src="images/items/orange.png" class="img-thumbnail p-2" alt="" width="48px"
+                                    height="auto">
                             </a>
-                            <a href="#" class="col-4 border border-success rounded-3">
-                                <img src="images/items/orange.png" alt="" width="48px" height="auto">
+                            <a href="#" class="col-4">
+                                <img src="images/items/orange.png" class="img-thumbnail p-2" alt="" width="48px"
+                                    height="auto">
                             </a>
 
                         </div>
@@ -133,9 +136,9 @@
 
                         <!-- Breadcrumbs and Icons -->
 
-                        <div class="row col-12 d-flex mx-auto align-items-start justify-content-center mt-2 mb-2 p-2">
+                        <div class="row col-12 d-flex mx-auto align-items-center justify-content-center my-2 p-2">
 
-                            <div class="col-6 d-flex justify-content-start">
+                            <div class="col-6 d-flex justify-content-start px-2 pt-4 mx-auto">
 
                                 <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
                                     aria-label="breadcrumb">
@@ -147,11 +150,11 @@
 
                             </div>
 
-                            <div class="col-6 d-flex justify-content-end">
+                            <div class="col-6 d-flex justify-content-end mx-auto">
 
-                                <a href="#" class="me-3 p-2 bg-white shadow rounded-2"><img src="images/icons/heart.svg"
-                                        width="24px" height="24px"></a>
-                                <a href="#" class="p-2 bg-white shadow rounded-2"><img src="images/icons/upload.svg"
+                                <a href="#" class="me-3 p-3 bg-white shadow-sm rounded-3"><img
+                                        src="images/icons/heart.svg" width="24px" height="24px"></a>
+                                <a href="#" class="p-3 bg-white shadow-sm rounded-3"><img src="images/icons/upload.svg"
                                         width="24px" height="24px"></a>
 
 
@@ -173,10 +176,22 @@
 
                                 <div class="col-6 d-flex justify-content-end">
 
-                                    <a href="" class="me-2"><i class="fa-solid fa-star me-2"></i><strong
-                                            class="text-success">4.5K</strong></a>
-                                    <a href="" class=""><i class="fa-solid fa-comment me-2"></i><strong
-                                            class="text-primary">4.5K</strong></a>
+                                    <!-- <button type="button" class="btn btn-popover shadow" data-bs-container="body"
+                                        data-bs-toggle="popover" data-bs-placement="left"
+                                        data-bs-content="Left popover">
+                                        Popover on left
+                                    </button> -->
+
+                                    <button class="me-1 p-2 btn-popover" data-bs-toggle="popover"
+                                        data-bs-placement="bottom" data-bs-content="Bottom popover">
+                                        <i class="fa-solid fa-star me-1"></i><strong class="text-success">4.5K</strong>
+                                    </button>
+
+                                    <button class="p-2 btn-popover" data-bs-container="body" data-bs-toggle="popover"
+                                        data-bs-placement="bottom" data-bs-content="Bottom popover">
+                                        <i class="fa-solid fa-message me-1"></i><strong
+                                            class="text-success">4.5K</strong>
+                                    </button>
 
                                 </div>
 
@@ -184,9 +199,9 @@
 
                             <!-- Product Description -->
 
-                            <div class="col-12">
+                            <div class="row col-12">
 
-                                <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing
+                                <p class="text-start mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing
                                     elit. Atque
                                     libero sequi tempora,
                                     officiis pariatur ad ullam commodi voluptatibus odit velit id. Porro recusandae
@@ -199,7 +214,7 @@
 
                             </div>
 
-                            <div class="col-12">
+                            <div class="row col-12">
 
                                 <h6 class="fw-bold text-start">Nutritional Information</h6>
                                 </p>
@@ -226,7 +241,7 @@
 
                 <!-- Google Maps Integration -->
 
-                <div class="col-12 mt-4">
+                <div class="col-12 my-4">
 
                     <div class="row col-12 align-items-center mx-auto mb-2">
 
@@ -249,7 +264,7 @@
 
                 <!-- Reviews -->
 
-                <div class="col-12 mt-4 mt-4">
+                <div class="col-12 my-2">
 
                     <div class="row col-12 mx-auto align-items-center justify-content-center">
                         <div class="col-6">
@@ -267,25 +282,42 @@
 
                         <!-- Sections -->
                         <div class="row col-12 mx-auto justify-content-start align-items-center">
-                            <div class="col-8 mt-4">
-                                <div class="mb-3 align-items-start justify-content-center p-2"
-                                    style="max-width: 16rem;">
-                                    <div class="row p-2 justify-content-center">
-                                        <div class="col-4">
-                                            <img src="images/UI faces/face_1.jpg" class="ui_faces_small" alt="...">
+
+                            <div class="row col-12 mt-2 align-items-center mx-auto">
+                                <div class="col-8">
+
+                                    <div class="mb-2 align-items-start justify-content-center p-2"
+                                        style="max-width: 16rem;">
+
+                                        <div class="row p-0 me-2 p-lg-2 me-lg-2 justify-content-center">
+                                            <!-- avatar -->
+                                            <div class="col-4">
+                                                <img src="images/UI faces/face_1.jpg" class="ui_faces_small" alt="...">
+                                            </div>
+
+                                            <!-- Description -->
+                                            <div class="col-8">
+                                                <h5 class="card-title fw-bold">Card title</h5>
+                                                <p class="card-text"><small>Jobs</small></p>
+                                            </div>
+
                                         </div>
-                                        <div class="col-8">
-                                            <h5 class="card-title fw-bold">Card title</h5>
-                                            <p class="card-text"><small>Jobs</small></p>
-                                        </div>
+
                                     </div>
+
                                 </div>
+
+                                <div class="col-4 justify-content-end">
+
+                                    <h6 class="fw-bold text-end">Posted on:</h6>
+                                    <h6 class="fw-regular text-end">April 28th,2019</h6>
+
+                                </div>
+
                             </div>
-                            <div class="col-4">
-                                <h6 class="fw-bold text-end">Posted on:</h6>
-                                <h6 class="fw-regular text-end">April 28th,2019</h6>
-                            </div>
-                            <div class="col-12">
+
+                            <div class="col-12 mx-auto">
+
                                 <p class="fw-regular text-start">Lorem ipsum dolor sit amet consectetur adipisicing
                                     elit.
                                     Error porro
@@ -297,31 +329,50 @@
                                             More..</span>
                                     </a>
                                 </p>
+
                             </div>
+
                         </div>
 
                         <hr class="lines">
 
                         <div class="row col-12 mx-auto justify-content-start align-items-center">
-                            <div class="col-8">
-                                <div class="mb-3 align-items-start justify-content-center p-2"
-                                    style="max-width: 16rem;">
-                                    <div class="row p-2 justify-content-center">
-                                        <div class="col-4">
-                                            <img src="images/UI faces/face_1.jpg" class="ui_faces_small" alt="...">
+
+                            <div class="row col-12 mt-2 align-items-center mx-auto">
+                                <div class="col-8">
+
+                                    <div class="mb-2 align-items-start justify-content-center p-2"
+                                        style="max-width: 16rem;">
+
+                                        <div class="row p-2 me-2 justify-content-center">
+                                            <!-- avatar -->
+                                            <div class="col-4">
+                                                <img src="images/UI faces/face_1.jpg" class="ui_faces_small" alt="...">
+                                            </div>
+
+                                            <!-- Description -->
+                                            <div class="col-8">
+                                                <h5 class="card-title fw-bold">Card title</h5>
+                                                <p class="card-text"><small>Jobs</small></p>
+                                            </div>
+
                                         </div>
-                                        <div class="col-8">
-                                            <h5 class="card-title fw-bold">Card title</h5>
-                                            <p class="card-text"><small>Jobs</small></p>
-                                        </div>
+
                                     </div>
+
                                 </div>
+
+                                <div class="col-4 justify-content-end">
+
+                                    <h6 class="fw-bold text-end">Posted on:</h6>
+                                    <h6 class="fw-regular text-end">April 28th,2019</h6>
+
+                                </div>
+
                             </div>
-                            <div class="col-4">
-                                <h6 class="fw-bold text-end">Posted on:</h6>
-                                <h6 class="fw-regular text-end">April 28th,2019</h6>
-                            </div>
-                            <div class="col-12">
+
+                            <div class="col-12 mx-auto">
+
                                 <p class="fw-regular text-start">Lorem ipsum dolor sit amet consectetur adipisicing
                                     elit.
                                     Error porro
@@ -333,31 +384,50 @@
                                             More..</span>
                                     </a>
                                 </p>
+
                             </div>
+
                         </div>
 
                         <hr class="lines">
 
                         <div class="row col-12 mx-auto justify-content-start align-items-center">
-                            <div class="col-8">
-                                <div class="mb-3 align-items-start justify-content-center p-2"
-                                    style="max-width: 16rem;">
-                                    <div class="row p-2 justify-content-center">
-                                        <div class="col-4">
-                                            <img src="images/UI faces/face_1.jpg" class="ui_faces_small" alt="...">
+
+                            <div class="row col-12 mt-2 align-items-center mx-auto">
+                                <div class="col-8">
+
+                                    <div class="mb-2 align-items-start justify-content-center p-2"
+                                        style="max-width: 16rem;">
+
+                                        <div class="row p-2 me-2 justify-content-center">
+                                            <!-- avatar -->
+                                            <div class="col-4">
+                                                <img src="images/UI faces/face_1.jpg" class="ui_faces_small" alt="...">
+                                            </div>
+
+                                            <!-- Description -->
+                                            <div class="col-8">
+                                                <h5 class="card-title fw-bold">Card title</h5>
+                                                <p class="card-text"><small>Jobs</small></p>
+                                            </div>
+
                                         </div>
-                                        <div class="col-8">
-                                            <h5 class="card-title fw-bold">Card title</h5>
-                                            <p class="card-text"><small>Jobs</small></p>
-                                        </div>
+
                                     </div>
+
                                 </div>
+
+                                <div class="col-4 justify-content-end">
+
+                                    <h6 class="fw-bold text-end">Posted on:</h6>
+                                    <h6 class="fw-regular text-end">April 28th,2019</h6>
+
+                                </div>
+
                             </div>
-                            <div class="col-4">
-                                <h6 class="fw-bold text-end">Posted on:</h6>
-                                <h6 class="fw-regular text-end">April 28th,2019</h6>
-                            </div>
-                            <div class="col-12">
+
+                            <div class="col-12 mx-auto">
+
                                 <p class="fw-regular text-start">Lorem ipsum dolor sit amet consectetur adipisicing
                                     elit.
                                     Error porro
@@ -369,23 +439,14 @@
                                             More..</span>
                                     </a>
                                 </p>
+
                             </div>
+
                         </div>
 
-                        <!-- Pagination -->
-                        <div class="container ">
-                            <nav aria-label="page navigation example col-12 col-lg-6 p-2 mt-2">
-                                <ul
-                                    class="list-group list-group-horizontal justify-content-center align-items-center justify-content-lg-end align-items-lg-end">
-                                    <li class="list-group-item"><i class="fa fa-angle-double-left"></i></li>
-                                    <li class="list-group-item" style="color: #53B175; font-weight: bold;">1</li>
-                                    <li class="list-group-item bg_info text-white">2</li>
-                                    <li class="list-group-item" style="color: #53B175; font-weight: bold;">3</li>
-                                    <li class="list-group-item" style="color: #53B175; font-weight: bold;">4</li>
-                                    <li class="list-group-item"><i class="fa fa-angle-double-right"></i></li>
-                                </ul>
-                            </nav>
-                        </div>
+                        <button class="btn-secondary float-end mt-2" href="">
+                            <i class="fa-solid fa-eye me-2"></i>See more....
+                        </button>
 
                     </div>
 
@@ -397,7 +458,7 @@
 
                 <!-- Buy button -->
 
-                <div class="col-12 box-container d-block">
+                <div class="col-12 box-container d-block mx-auto">
 
                     <div class="col-12 d-flex justify-content-center align-items-center mx-auto">
 
@@ -425,7 +486,7 @@
 
                     </div>
 
-                    <div class="accordion accordion-flush border border-success border-2 p-2 rounded-3 mt-4"
+                    <div class="accordion accordion-flush border border-success border-2 p-2 rounded-3 mt-4 mx-auto"
                         id="accordionFlushExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="flush-headingOne">
@@ -451,10 +512,11 @@
 
                     </div>
 
-                    <div class="row col-12 justify-content-start text-start my-4 mx-auto">
+                    <div class="row col-12 justify-content-start text-start my-4 mx-auto border p-3">
                         <h6 class="fw-bold">Deliver To:</h6>
                         <a href="">
-                            <span class="text-success fw-bold">2972 Westheimer Rd. Santa Ana, Illinois 85486 </span>
+                            <span class="text-success fw-bold">2972 Westheimer Rd. Santa Ana, Illinois 85486
+                            </span>
                         </a>
                     </div>
 
@@ -467,11 +529,14 @@
 
                 </div>
 
+                <!-- More like this -->
 
                 <div class="col-12 mt-4 box-container">
 
-                    <div class="col-12">
-                        <h5 class="fw-bold">More Like this</h5>
+                    <div class="row col-12 justify-content-start">
+
+                        <h5 class="fw-bold text-start">More Like this</h5>
+
                     </div>
 
                     <hr class="lines">
@@ -479,7 +544,7 @@
                     <!-- Items -->
                     <div class="row col-12 bg-white shadow p-3 rounded-3 align-items-center mx-auto my-2">
 
-                        <div class="row col-12 mb-2 d-flex justify-content-center align-items-center mx-auto">
+                        <div class="row col-12 mb-2 mx-auto">
 
                             <div class="col-8">
                                 <a href="">
@@ -502,7 +567,7 @@
                                         class="p-2 shadow-sm rounded-2" style="background-color: #FFE2E2;">
                                 </a>
                             </div>
-                            <div class="col-8 align-items-center">
+                            <div class="col-8">
                                 <h5 class="fw-bold text-start">Orange (1KG)</h5>
                                 <h8 class="fw-regular text-start">Vegetable</h8>
                             </div>
@@ -512,7 +577,7 @@
 
                     <div class="row col-12 bg-white shadow p-3 rounded-3 align-items-center mx-auto my-2">
 
-                        <div class="row col-12 mb-2 d-flex justify-content-center align-items-center mx-auto">
+                        <div class="row col-12 mb-2 mx-auto">
 
                             <div class="col-8">
                                 <a href="">
@@ -531,11 +596,11 @@
                         <div class="row col-12 mx-auto">
                             <div class="col-4">
                                 <a href="#">
-                                    <img src="images/items/Cauliflower.png" alt="" width="64px" height="auto"
-                                        class="p-2 shadow-sm rounded-2" style="background-color: #DEFFF1;">
+                                    <img src="images/items/orange.png" alt="" width="64px" height="auto"
+                                        class="p-2 shadow-sm rounded-2" style="background-color: #FFE2E2;">
                                 </a>
                             </div>
-                            <div class="col-8 align-items-center">
+                            <div class="col-8">
                                 <h5 class="fw-bold text-start">Orange (1KG)</h5>
                                 <h8 class="fw-regular text-start">Vegetable</h8>
                             </div>
@@ -545,7 +610,7 @@
 
                     <div class="row col-12 bg-white shadow p-3 rounded-3 align-items-center mx-auto my-2">
 
-                        <div class="row col-12 mb-2 d-flex justify-content-center align-items-center mx-auto">
+                        <div class="row col-12 mb-2 mx-auto">
 
                             <div class="col-8">
                                 <a href="">
@@ -564,11 +629,11 @@
                         <div class="row col-12 mx-auto">
                             <div class="col-4">
                                 <a href="#">
-                                    <img src="images/items/Chicken.png" alt="" width="64px" height="auto"
-                                        class="p-2 shadow-sm rounded-2" style="background-color: #DDF5FF;">
+                                    <img src="images/items/orange.png" alt="" width="64px" height="auto"
+                                        class="p-2 shadow-sm rounded-2" style="background-color: #FFE2E2;">
                                 </a>
                             </div>
-                            <div class="col-8 align-items-center">
+                            <div class="col-8">
                                 <h5 class="fw-bold text-start">Orange (1KG)</h5>
                                 <h8 class="fw-regular text-start">Vegetable</h8>
                             </div>
@@ -578,7 +643,7 @@
 
                     <div class="row col-12 bg-white shadow p-3 rounded-3 align-items-center mx-auto my-2">
 
-                        <div class="row col-12 mb-2 d-flex justify-content-center align-items-center mx-auto">
+                        <div class="row col-12 mb-2 mx-auto">
 
                             <div class="col-8">
                                 <a href="">
@@ -597,11 +662,11 @@
                         <div class="row col-12 mx-auto">
                             <div class="col-4">
                                 <a href="#">
-                                    <img src="images/items/Almond-Milk.png" alt="" width="64px" height="auto"
-                                        class="p-2 shadow-sm rounded-2" style="background-color: #FFE2B7;">
+                                    <img src="images/items/orange.png" alt="" width="64px" height="auto"
+                                        class="p-2 shadow-sm rounded-2" style="background-color: #FFE2E2;">
                                 </a>
                             </div>
-                            <div class="col-8 align-items-center">
+                            <div class="col-8">
                                 <h5 class="fw-bold text-start">Orange (1KG)</h5>
                                 <h8 class="fw-regular text-start">Vegetable</h8>
                             </div>
@@ -618,6 +683,7 @@
 
     </main>
 
+    <script src="script.js"></script>
 
     <!--Footer-->
 

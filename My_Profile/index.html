@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 
+
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -8,13 +9,11 @@
 
   <title>Ecommerce Website</title>
 
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-
   <!--Google Fonts Link-->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,20 +25,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-  <!--Font Awesome Link-->
-  <script src="https://kit.fontawesome.com/02c69b64af.js" crossorigin="anonymous"></script>
+
+  <!--FontAwesome Link-->
+  <script src="https://kit.fontawesome.com/50217cdc33.js" crossorigin="anonymous"></script>
+
   <!--External CSS-->
   <link rel="stylesheet" href="../style.css">
 
 </head>
 
 <body>
-
   <!--Bootstrap JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-
 
 
   <!--Navbar-->
@@ -81,121 +80,99 @@
   <br><br><br>
   <main class="container">
 
-    <!--Header-->
+    <section class="col-12 mt-4">
 
-    <div class="row col-lg-12 col-12 justify-content-center align-items-center my-2 mx-auto">
+      <!--Header-->
+      <div class="row col-12 d-flex justify-content-center align-items-center my-2 mx-auto">
 
-      <div class="col-lg-4 col-6 text-lg-start text-start">
-        <h3 class="fw-bold">My Account</h3>
-      </div>
-
-      <div class="col-lg-8 col-6 text-lg-end text-end">
-        <a href="">
-          <h7 class="fw-bold" style="color: #829187;"><i class="fas fa-sign-out-alt pr-2"></i> Log Out
-          </h7>
-        </a>
-      </div>
-
-
-    </div>
-
-    <!--Body-->
-
-    <div
-      class="row col-lg-12 col-12 justify-content-lg-center align-items-lg-center justify-content-center align-items-center mx-auto">
-
-      <!--Order and Returns-->
-
-      <div class="row jumbotron col-lg-12 col-12 shadow align-items-center justify-content-center mt-2 p-4 my-2">
-
-        <div class="col-lg-6 col-10 text-start">
-          <h5 class="fw-bold" style="color: #829187;"><i class="fas fa-shopping-bag pr-2"></i> <span
-              style="color: #05220E;"> Order and Returns</span></h5>
+        <div class="col-6 text-start">
+          <h3 class="fw-bold">My Account</h3>
         </div>
-        <div class="col-lg-6 col-2 text-end">
-          <a href="../My_Profile/Order_and_Returns.html">
-            <h4 style="color: #53B175;"><i class="fas fa-chevron-right"></i></h4>
+        <div class="col-6 text-end">
+          <a href="">
+            <h7 class="fw-bold" style="color: #829187;"><i class="fas fa-sign-out-alt pe-2"></i> Log Out
+            </h7>
           </a>
         </div>
-
       </div>
 
-      <!--Profile Details-->
+      <!--Body-->
+      <div class="row col-12 d-flex justify-content-center align-items-center mx-auto">
 
-      <div class="row jumbotron col-lg-12 col-12 shadow align-items-center justify-content-center mt-2 p-4 my-2">
-
-        <div class="col-lg-6 col-10 text-start">
-          <h5 class="fw-bold" style="color: #829187;"> <i class="far fa-address-card pr-lg-4 pr-2"></i>
-            <span style="color: #05220E;"> Profile Details</span>
-          </h5>
+        <!--Order and Returns-->
+        <div class="row box-container col-12  align-items-center justify-content-center my-2 p-4">
+          <div class="col-lg-6 col-10 text-start">
+            <h5 class="fw-bold" style="color: #829187;"><i class="fas fa-shopping-bag pe-2"></i> <span
+                style="color: #05220E;"> Order and Returns</span></h5>
+          </div>
+          <div class="col-lg-6 col-2 text-end">
+            <a href="../My_Profile/Order_and_Returns.html">
+              <h4 style="color: #53B175;"><i class="fas fa-chevron-right"></i></h4>
+            </a>
+          </div>
         </div>
-        <div class="col-lg-6 col-2 text-end">
-          <a href="../My_Profile/Order_and_Returns.html">
-            <h4 style="color: #53B175;"><i class="fas fa-chevron-right"></i></h4>
-          </a>
+
+        <!--Profile Details-->
+        <div class="row box-container col-12  align-items-center justify-content-center p-4 my-2">
+          <div class="col-lg-6 col-10 text-start">
+            <h5 class="fw-bold" style="color: #829187;"> <i class="far fa-address-card  pe-2"></i>
+              <span style="color: #05220E;"> Profile Details</span>
+            </h5>
+          </div>
+          <div class="col-lg-6 col-2 text-end">
+            <a href="../My_Profile/Order_and_Returns.html">
+              <h4 style="color: #53B175;"><i class="fas fa-chevron-right"></i></h4>
+            </a>
+          </div>
         </div>
 
+        <!--My Address-->
+        <div class="row box-container col-12  align-items-center justify-content-center mt-2 p-4 my-2">
+          <div class="col-lg-6 col-10 text-start">
+            <h5 class="fw-bold" style="color: #829187;"> <i class="fas fa-home  pe-2"></i>
+              <span style="color: #05220E;"> My Address</span>
+            </h5>
+          </div>
+          <div class="col-lg-6 col-2 text-end">
+            <a href="../My_Profile/Order_and_Returns.html">
+              <h4 style="color: #53B175;"><i class="fas fa-chevron-right"></i></h4>
+            </a>
+          </div>
+        </div>
+
+        <!--Payment Methods-->
+        <div class="row box-container col-12  align-items-center justify-content-center p-4 my-2">
+          <div class="col-lg-6 col-10 text-start">
+            <h5 class="fw-bold" style="color: #829187;"> <i class="far fa-credit-card pe-2"></i>
+              <span style="color: #05220E;"> Payment Methods</span>
+            </h5>
+          </div>
+          <div class="col-lg-6 col-2 text-end">
+            <a href="../My_Profile/Order_and_Returns.html">
+              <h4 style="color: #53B175;"><i class="fas fa-chevron-right"></i></h4>
+            </a>
+          </div>
+        </div>
+
+        <!--Customer Support-->
+        <div class="row box-container col-12 align-items-center justify-content-center  p-4 my-2">
+          <div class="col-lg-6 col-10 text-sm-start text-lg-start">
+            <h5 class="fw-bold" style="color: #829187;"> <i class="fas fa-mobile-alt  pe-2"></i>
+              <span style="color: #05220E;"> Customer Support</span>
+            </h5>
+          </div>
+          <div class="col-lg-6 col-2 text-end">
+            <a href="../My_Profile/Order_and_Returns.html">
+              <h4 style="color: #53B175;"><i class="fas fa-chevron-right"></i></h4>
+            </a>
+          </div>
+        </div>
       </div>
+    </section>
 
-
-
-      <!--My Address-->
-
-      <div class="row jumbotron col-lg-12 col-12 shadow align-items-center justify-content-center mt-2 p-4 my-2">
-
-        <div class="col-lg-6 col-10 text-start">
-          <h5 class="fw-bold" style="color: #829187;"> <i class="fas fa-home pr-lg-4 pr-2"></i>
-            <span style="color: #05220E;"> My Address</span>
-          </h5>
-        </div>
-        <div class="col-lg-6 col-2 text-end">
-          <a href="../My_Profile/Order_and_Returns.html">
-            <h4 style="color: #53B175;"><i class="fas fa-chevron-right"></i></h4>
-          </a>
-        </div>
-
-      </div>
-
-
-      <!--Payment Methods-->
-
-      <div class="row jumbotron col-lg-12 col-12 shadow align-items-center justify-content-center mt-2 p-4 my-2">
-
-        <div class="col-lg-6 col-10 text-start">
-          <h5 class="fw-bold" style="color: #829187;"> <i class="far fa-credit-card pr-lg-4 pr-2"></i>
-            <span style="color: #05220E;"> Payment Methods</span>
-          </h5>
-        </div>
-        <div class="col-lg-6 col-2 text-end">
-          <a href="../My_Profile/Order_and_Returns.html">
-            <h4 style="color: #53B175;"><i class="fas fa-chevron-right"></i></h4>
-          </a>
-        </div>
-
-      </div>
-
-
-      <!--Customer Support-->
-
-      <div class="row jumbotron col-lg-12 col-12 shadow align-items-center justify-content-center mt-2 p-4 my-2">
-
-        <div class="col-lg-6 col-10 text-sm-start text-lg-start">
-          <h5 class="fw-bold" style="color: #829187;"> <i class="fas fa-mobile-alt pr-lg-4 pr-2"></i>
-            <span style="color: #05220E;"> Customer Support</span>
-          </h5>
-        </div>
-        <div class="col-lg-6 col-2 text-end">
-          <a href="../My_Profile/Order_and_Returns.html">
-            <h4 style="color: #53B175;"><i class="fas fa-chevron-right"></i></h4>
-          </a>
-        </div>
-
-      </div>
-
-    </div>
+    <script src="script.js"></script>
 
   </main>
-
 
   <!--Footer-->
 
@@ -219,17 +196,17 @@
             555-0108</p>
 
           <!-- <ul class="list-inline mt-4">
-              <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i
-                    class="fa-2x fa-twitter"></i></a></li>
-              <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i
-                    class="fab fa-2x fa-facebook-f"></i></a></li>
-              <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i
-                    class="fab fa-2x fa-instagram"></i></a></li>
-              <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i
-                    class="fab fa-2x fa-youtube"></i></a></li>
-              <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i
-                    class="fab fa-2x fa-google"></i></a></li>
-            </ul> -->
+        <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i
+              class="fa-2x fa-twitter"></i></a></li>
+        <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i
+              class="fab fa-2x fa-facebook-f"></i></a></li>
+        <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i
+              class="fab fa-2x fa-instagram"></i></a></li>
+        <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i
+              class="fab fa-2x fa-youtube"></i></a></li>
+        <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i
+              class="fab fa-2x fa-google"></i></a></li>
+      </ul> -->
         </div>
         <div class="col-lg-2 col-md-6 mb-4 mt-4 mb-lg-0">
           <h6 class="text-uppercase font-weight-bold mb-4">Useful Links</h6>
@@ -276,15 +253,15 @@
 
     <div class="py-2 mb-8 col-12 col-lg-12">
       <div class="container text-center text-lg-center">
-        <p class="text-white  font-weight-bold mb-10 py-2"><span>MyMarket 2021. All Rights reserved</span>
+        <p class="text-white  font-weight-bold mb-10 py-2">&copy; <span>MyMarket 2021. All Rights reserved</span>
         </p>
       </div>
     </div>
   </footer>
 
-  </div>
 
-  <script src="script.js"></script>
+
+
 
 </body>
 
