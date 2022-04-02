@@ -84,11 +84,11 @@
   <br>
   <br>
 
-  <main class="container rounded-2 mt-2 bg-white p-4 shadow mx-auto">
+  <main class="container rounded-2 mt-2 p-4 mx-auto">
 
 
     <!--Breadcrumb and Sort-->
-    <section class="row col-12 d-flex justify-content-center align-items-center mx-auto my-2 shadow p-2">
+    <section class="row col-12 d-flex justify-content-center align-items-center mx-auto my-2  p-2">
 
       <div class="col-8 float-start">
         <h4 class="fw-bold mb-2">Profile Details</h4>
@@ -118,105 +118,164 @@
 
     <section class="my-4 col-lg-12 col-md-12 col-12 jumbotron shadow">
 
-      <div class="profile_background_image rounded-2 mb-2 mx-auto">
+      <div class="clearfix"></div>
 
-      </div>
+      <div class="profile_background_image rounded-2 mb-2 mx-auto img-fluid"> </div>
 
-      <div class="row col-12 mx-auto align-items-center my-4">
-
-        <div class="col-8">
-          <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="../images/UI faces/face_1.jpg" class="img-fluid rounded-start" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.</p>
-                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
+      <div class="row col-12 mx-auto my-2 position-relative p-2">
 
         <div class="col-4">
 
-          <button class="btn-paid float-end">Edit Profile</button>
+          <div class="position-absolute bottom-0 start-0 p-4">
+
+            <img src="../images/UI faces/face_1.jpg" alt="" class="ui_faces_big img-fluid"><button
+              class="position-absolute bottom-0 end-0 rounded-circle p-2 btn" style="border: none;"><i
+                class="fa-solid fa-camera fa-2x p-2"></i>
+            </button>
+
+          </div>
 
         </div>
 
-      </div>
+        <div class="col-4">
+
+          <h4 class="fw-bold">Marcus</h4>
+          <i class="fa-solid fa-certificate me-2 fw-regular"></i><span class="fw-regular fw-bold">Verified
+            Customer</span>
+
+        </div>
+
+        <div class="col-4">
+
+          <!-- Button -->
+          <button class="btn-paid float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit Profile</button>
+
+          <!-- Modal -->
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered rounded-4">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title fw-bold" id="exampleModalLabel">Edit profile:</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="container-fluid">
+
+                    <div class="row col-12 mx-auto">
+                      <div class="col-12">
+                        <div class="profile_background_image img-fluid"></div>
+                        <div class="vstack gap-2 col-12 mx-auto mt-2">
+                          <button type="button" class="btn btn-primary">Upload</button>
+
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <hr class="lines">
+
+                    <div class="row col-12 mx-auto">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label fw-bold">Name</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                          placeholder="name@example.com">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label fw-bold">Profile Description</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
 
     </section>
 
     <!--Followers,Following,Reviews-->
 
-    <section class="my-4 row col-12 jumbotron shadow align-items-center justify-content-center mx-auto">
+    <section class="row col-12 jumbotron shadow align-items-center justify-content-center mx-auto my-4 ">
 
-      <div class="col-lg-4 col-md-4 col-4 mx-auto align-items-lg-center justify-content-lg-center">
+      <div class="clearfix"></div>
 
-        <h1 class="card-title text-lg-center" style="font-weight: bold;">16K</h4>
-          <h5 class="card-title text-lg-center" style="font-weight: 600; color: #53B175;">Followers</h5>
-
+      <div class="col-4 d-flex align-items-start justify-content-center">
+        <a href="#">
+          <h2 class="text-center fw-bold">16K</h2>
+          <h5 class="text-center text-normal fw-bold">Followers</h5>
+        </a>
       </div>
-
-      <div class="col-lg-4 col-md-4 col-4 mx-auto align-items-lg-center justify-content-lg-center">
-
-        <h1 class="card-title text-lg-center" style="font-weight: bold;">16K</h1>
-        <h5 class="card-title text-lg-center" style="font-weight: 600; color: #53B175;">Following</h5>
-
+      <div class="col-4 d-flex align-items-start justify-content-center">
+        <a href="#">
+          <h2 class="text-center fw-bold">16K</h2>
+          <h5 class="text-center text-normal fw-bold">Followers</h5>
+        </a>
       </div>
-
-      <div class="col-lg-4 col-md-4 col-4 mx-auto align-items-lg-center justify-content-lg-center">
-
-        <h1 class="card-title text-lg-center" style="font-weight: bold;">16K</h1>
-        <h5 class="card-title text-lg-center" style="font-weight: 600; color: #53B175;">Reviews</h5>
-
+      <div class="col-4 d-flex align-items-start justify-content-center ">
+        <a href="#">
+          <h2 class="text-center fw-bold">16K</h2>
+          <h5 class="text-center text-normal fw-bold">Followers</h5>
+        </a>
       </div>
-
     </section>
 
     <!--People you follow-->
 
-    <section
-      class="mt-4 row col-lg-12 col-md-12 col-12 jumbotron shadow mx-auto align-items-lg-center justify-content-lg-center align-items-center justify-content-center">
+    <section class="row col-12 jumbotron shadow mx-auto align-items-center justify-content-center my-4">
 
-      <div class="row col-lg-8 col-md-8 col-4 mx-auto">
-        <h4 style="font-weight: bold; float: left;">People you follow</h4>
+      <div class="row col-12 mx-auto align-items-center">
+
+        <div class="col-6">
+          <h4 class="fw-bold text-start">People you Follow</h4>
+        </div>
+
+        <div class="col-6">
+          <a href="#" class="">
+            <h6 class="fw-bold text-end text-success"><span>Discover More</span></h6>
+          </a>
+        </div>
+
       </div>
 
-      <div class="col-lg-4 col-md-4 col-4 mx-auto">
-        <h6 style="font-weight: 600; float: right;"><a href="" style=" color: #53B175;"><u>Discover more</u></a>
-        </h6>
+      <div class="row d-flex flex-wrap align-items-center justify-content-center p-2 m-2 mx-auto col-12 scroll">
+
+        <img src="../images/UI faces/face_1.jpg"
+          class="ui_faces_big border border-success m-2 border-rounded p-2 rounded-pill" alt="">
+        <img src="../images/UI faces/face_2.jpg"
+          class="ui_faces_big border border-success m-2 border-rounded p-2 rounded-pill" alt="">
+        <img src="../images/UI faces/face_3.jpg"
+          class="ui_faces_big border border-success m-2 border-rounded p-2 rounded-pill" alt="">
+        <img src="../images/UI faces/face_1.jpg"
+          class="ui_faces_big border border-success m-2 border-rounded p-2 rounded-pill" alt="">
+        <img src="../images/UI faces/face_2.jpg"
+          class="ui_faces_big border border-success m-2 border-rounded p-2 rounded-pill" alt="">
+        <img src="../images/UI faces/face_3.jpg"
+          class="ui_faces_big border border-success m-2 border-rounded p-2 rounded-pill" alt="">
+        <img src="../images/UI faces/face_1.jpg"
+          class="ui_faces_big border border-success m-2 border-rounded p-2 rounded-pill" alt="">
+        <img src="../images/UI faces/face_2.jpg"
+          class="ui_faces_big border border-success m-2 border-rounded p-2 rounded-pill" alt="">
+        <img src="../images/UI faces/face_3.jpg"
+          class="ui_faces_big border border-success m-2 border-rounded p-2 rounded-pill" alt="">
+        <img src="../images/UI faces/face_1.jpg"
+          class="ui_faces_big border border-success m-2 border-rounded p-2 rounded-pill" alt="">
+        <img src="../images/UI faces/face_2.jpg"
+          class="ui_faces_big border border-success m-2 border-rounded p-2 rounded-pill" alt="">
+        <img src="../images/UI faces/face_3.jpg"
+          class="ui_faces_big border border-success m-2 border-rounded p-2 rounded-pill" alt="">
+
       </div>
-
-      <div
-        class="row col-lg-12 col-12 col-md-12 mx-auto justify-content-center align-items-center justify-content-lg-center align-items-lg-center mx-auto">
-
-        <div class="row col-2 col-lg-2 col-md-2">
-          <a href="" class="rounded-circle img-thumbnail"><img src="../images/UI faces/face_1.jpg" alt="" width="128px"
-              height="auto" style="border-radius: 50%;"></a>
-        </div>
-
-        <div class="row col-2 col-lg-2 col-md-2">
-          <a href="" class="rounded-circle img-thumbnail"><img src="../images/UI faces/face_2.jpg" alt="" width="128px"
-              height="auto" style="border-radius: 50%;"></a>
-        </div>
-
-        <div class="row col-2 col-lg-2 col-md-2">
-          <a href="" class="rounded-circle img-thumbnail"><img src="../images/UI faces/face_2.jpg" alt="" width="128px"
-              height="auto" style="border-radius: 50%;"></a>
-        </div>
-
-        <div class="row col-2 col-lg-2 col-md-2">
-          <a href="" class="rounded-circle img-thumbnail"><img src="../images/UI faces/face_1.jpg" alt="" width="128px"
-              height="auto" style="border-radius: 50%;"></a>
-        </div>
 
 
       </div>
@@ -225,14 +284,37 @@
 
     <!--Profile Description-->
 
-    <section
-      class="mt-4 row col-lg-12 col-md-12 col-12 jumbotron shadow align-items-lg-center justify-content-lg-center mx-auto">
+    <section class="my-4 row col-12 jumbotron shadow align-items-center justify-content-center mx-auto">
 
-      <div class="col-lg-12 col-md-12 col-12">
-        <h4 style="font-weight: bold; " class="card-title">Profile Description</h4>
+      <div class="col-12">
+        <h4 class="fw-bold">Profile Description</h4>
       </div>
-      <div class="col-lg-12 col-md-12 col-12">
-        <p class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, perferendis?
+      <div class="col-12 scroll">
+        <p class="fw-regular my-2">
+          <span class="fw-bold fs-1">L</span>orem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+          perferendis?
+          Sapiente ipsa deleniti
+          quasi. Beatae doloribus exercitationem repellendus laboriosam illum quidem voluptate, natus consequuntur
+          ipsum nemo non assumenda soluta tenetur.
+          Dolorem expedita veniam accusamus, autem illum cum id provident. Voluptate illo tenetur, at doloremque
+          officiis repudiandae, distinctio delectus animi repellendus quaerat numquam optio nam dolor minus vero?
+          Quod, blanditiis aut.
+        </p>
+        <p class="fw-regular my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, perferendis?
+          Sapiente ipsa deleniti
+          quasi. Beatae doloribus exercitationem repellendus laboriosam illum quidem voluptate, natus consequuntur
+          ipsum nemo non assumenda soluta tenetur.
+          Dolorem expedita veniam accusamus, autem illum cum id provident. Voluptate illo tenetur, at doloremque
+          officiis repudiandae, distinctio delectus animi repellendus quaerat numquam optio nam dolor minus vero?
+          Quod, blanditiis aut.</p>
+        <p class="fw-regular my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, perferendis?
+          Sapiente ipsa deleniti
+          quasi. Beatae doloribus exercitationem repellendus laboriosam illum quidem voluptate, natus consequuntur
+          ipsum nemo non assumenda soluta tenetur.
+          Dolorem expedita veniam accusamus, autem illum cum id provident. Voluptate illo tenetur, at doloremque
+          officiis repudiandae, distinctio delectus animi repellendus quaerat numquam optio nam dolor minus vero?
+          Quod, blanditiis aut.</p>
+        <p class="fw-regular my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, perferendis?
           Sapiente ipsa deleniti
           quasi. Beatae doloribus exercitationem repellendus laboriosam illum quidem voluptate, natus consequuntur
           ipsum nemo non assumenda soluta tenetur.
@@ -248,172 +330,158 @@
 
     <section class="my-4 col-12 jumbotron shadow">
 
-      <div class="col-lg-12 col-12 mb-4">
-        <h4 style="font-weight: bold; " class="card-title">Reviews & Activities</h4>
+      <div class="col-12 mb-4">
+        <h4 class="fw-bold">Reviews & Activities</h4>
       </div>
       <div class="scroll">
 
         <!--Review 1-->
 
-        <div class="row col-lg-12 col-md-12 col-12 mt-2 justify-content-lg-center align-items-lg-start mx-auto">
+        <div class="row col-12 mt-2 justify-content-lg-center align-items-start mx-auto">
 
-          <div class="col-lg-8 col-md-8 col-8">
+          <div class="col-8">
 
-            <img src="../images/items/orange.png" alt=""
-              style="background-color: #FFE2E2; width: 6rem; height:auto; border-radius: 15%; float: left;">
-
-            <div class="row col-lg-4">
-              <h5 style="font-weight: 600;">Oranges(1KG)</h5>
-              <h6 style="font-weight: 400; color: #829187;" class="mr-2">18th Aug 2021</h6>
-              <div class="col-lg-2 mx-auto">
-                <h6 style="font-weight: bold; color: #53B175;" class="row">Sharma Confectionaries</h6>
-                <h6 style="font-weight: bold; color: #53B175;" class="row">Sharma Confectionaries</h6>
+            <div class="bg-white mb-3 p-2 shadow-sm">
+              <div class="row g-0 align-items-center">
+                <div class="col-4">
+                  <img src="../images/items/orange.png" class="rounded-2 shadow-sm" alt="..."
+                    style="background-color: #FFE2E2; width: 128px; height: auto;">
+                </div>
+                <div class="col-8">
+                  <h5 class="fw-bold">Oranges(1KG)</h5>
+                  <h5 class="fw-regular">18th March 2022</h5>
+                  <a href="#"><span class="fw-bold text-success me-2">Sharma Confectionaries</span></a>
+                  <a href="#"><span class="fw-bold text-success">Sharma Confectionaries</span></a>
+                </div>
               </div>
             </div>
 
           </div>
 
+          <div class="col-4">
 
-          <div class="col-lg-4 col-md-4 col-4">
-
-            <a href=""><img src="../images/icons/options_for_reviews.svg" alt="" srcset="" style="float: right;"></a>
+            <a href=""><img src="../images/icons/options_for_reviews.svg" alt="" srcset="" class="float-end"></a>
 
           </div>
 
+          <div class="row col-12 my-2">
+            <div class="col-2 text-center"><a href=""><i class="fa fa-star checked" style="color:orange;"></i></a></div>
+            <div class="col-2 text-center"><a href=""><i class="fa fa-star checked" style="color:orange;"></i></a></div>
+            <div class="col-2 text-center"><a href=""><i class="fa fa-star checked" style="color:orange;"></i></a></div>
+            <div class="col-2 text-center"><a href=""><i class="fa fa-star checked" style="color:orange;"></i></a></div>
+          </div>
 
-
-          <div class="row col-lg-12 mt-4">
-            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-
-            <div class="row col-lg-12">
-              <h6 style="font-weight: bold;">Lorem ipsum dolor sit ametit.</h6>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio facilis eligendi consectetur
-                quibusdam recusandae, earum, eius quaerat ab vel nisi sequi mollitia praesentium placeat quasi
-                dignissimos aliquam tempora suscipit pariatur?
-                Iusto dolor dolores non. Nisi architecto placeat sed amet? Facere deleniti numquam, tempore placeat ea
-                soluta labore repudiandae, laborum commodi nobis quo minima eligendi! Vel dicta soluta doloremque aut
-                fugiat?
-              </p>
-            </div>
+          <div class="col-12">
+            <h6 class="fw-bold">Lorem ipsum dolor sit ametit.</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio facilis eligendi consectetur
+              quibusdam recusandae, earum, eius quaerat ab vel nisi sequi mollitia praesentium placeat quasi
+              dignissimos aliquam tempora suscipit pariatur?
+              Iusto dolor dolores non. Nisi architecto placeat sed amet? Facere deleniti numquam, tempore placeat ea
+              soluta labore repudiandae, laborum commodi nobis quo minima eligendi! Vel dicta soluta doloremque aut
+              fugiat?
+            </p>
           </div>
 
         </div>
 
         <hr class="lines">
 
-        <!--Review 2-->
+        <div class="row col-12 mt-2 justify-content-lg-center align-items-start mx-auto">
 
-        <div class="row col-lg-12 col-md-12 col-12 mt-2 justify-content-lg-center align-items-lg-start mx-auto">
+          <div class="col-8">
 
-          <div class="col-lg-8 col-md-8 col-8">
-
-            <img src="../images/items/orange.png" alt=""
-              style="background-color: #FFE2E2; width: 6rem; height:auto; border-radius: 15%; float: left;">
-
-            <div class="row col-lg-4">
-              <h5 style="font-weight: 600;">Oranges(1KG)</h5>
-              <h6 style="font-weight: 400; color: #829187;" class="mr-2">18th Aug 2021</h6>
-              <div class="col-lg-2 mx-auto">
-                <h6 style="font-weight: bold; color: #53B175;" class="row">Sharma Confectionaries</h6>
-                <h6 style="font-weight: bold; color: #53B175;" class="row">Sharma Confectionaries</h6>
+            <div class="bg-white mb-3 p-2 shadow-sm">
+              <div class="row g-0 align-items-center">
+                <div class="col-4">
+                  <img src="../images/items/orange.png" class="rounded-2 shadow-sm" alt="..."
+                    style="background-color: #FFE2E2; width: 128px; height: auto;">
+                </div>
+                <div class="col-8">
+                  <h5 class="fw-bold">Oranges(1KG)</h5>
+                  <h5 class="fw-regular">18th March 2022</h5>
+                  <a href="#"><span class="fw-bold text-success me-2">Sharma Confectionaries</span></a>
+                  <a href="#"><span class="fw-bold text-success">Sharma Confectionaries</span></a>
+                </div>
               </div>
             </div>
 
           </div>
 
+          <div class="col-4">
 
-          <div class="col-lg-4 col-md-4 col-4">
-
-            <a href=""><img src="../images/icons/options_for_reviews.svg" alt="" srcset="" style="float: right;"></a>
+            <a href=""><img src="../images/icons/options_for_reviews.svg" alt="" srcset="" class="float-end"></a>
 
           </div>
 
+          <div class="row col-12 my-2">
+            <div class="col-2 text-center"><a href=""><i class="fa fa-star checked" style="color:orange;"></i></a></div>
+            <div class="col-2 text-center"><a href=""><i class="fa fa-star checked" style="color:orange;"></i></a></div>
+            <div class="col-2 text-center"><a href=""><i class="fa fa-star checked" style="color:orange;"></i></a></div>
+            <div class="col-2 text-center"><a href=""><i class="fa fa-star checked" style="color:orange;"></i></a></div>
+          </div>
 
-
-          <div class="row col-lg-12 mt-4">
-            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-
-            <div class="row col-lg-12">
-              <h6 style="font-weight: bold;">Lorem ipsum dolor sit ametit.</h6>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio facilis eligendi consectetur
-                quibusdam recusandae, earum, eius quaerat ab vel nisi sequi mollitia praesentium placeat quasi
-                dignissimos aliquam tempora suscipit pariatur?
-                Iusto dolor dolores non. Nisi architecto placeat sed amet? Facere deleniti numquam, tempore placeat ea
-                soluta labore repudiandae, laborum commodi nobis quo minima eligendi! Vel dicta soluta doloremque aut
-                fugiat?
-              </p>
-            </div>
+          <div class="col-12">
+            <h6 class="fw-bold">Lorem ipsum dolor sit ametit.</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio facilis eligendi consectetur
+              quibusdam recusandae, earum, eius quaerat ab vel nisi sequi mollitia praesentium placeat quasi
+              dignissimos aliquam tempora suscipit pariatur?
+              Iusto dolor dolores non. Nisi architecto placeat sed amet? Facere deleniti numquam, tempore placeat ea
+              soluta labore repudiandae, laborum commodi nobis quo minima eligendi! Vel dicta soluta doloremque aut
+              fugiat?
+            </p>
           </div>
 
         </div>
 
         <hr class="lines">
 
+        <div class="row col-12 mt-2 justify-content-lg-center align-items-start mx-auto">
 
-        <!--Review 3-->
+          <div class="col-8">
 
-        <div class="row col-lg-12 col-md-12 col-12 mt-2 justify-content-lg-center align-items-lg-start mx-auto">
-
-          <div class="col-lg-8 col-md-8 col-8">
-
-            <img src="../images/items/orange.png" alt=""
-              style="background-color: #FFE2E2; width: 6rem; height:auto; border-radius: 15%; float: left;">
-
-            <div class="row col-lg-4">
-              <h5 style="font-weight: 600;">Oranges(1KG)</h5>
-              <h6 style="font-weight: 400; color: #829187;" class="mr-2">18th Aug 2021</h6>
-              <div class="col-lg-2 mx-auto">
-                <h6 style="font-weight: bold; color: #53B175;" class="row">Sharma Confectionaries</h6>
-                <h6 style="font-weight: bold; color: #53B175;" class="row">Sharma Confectionaries</h6>
+            <div class="bg-white mb-3 p-2 shadow-sm">
+              <div class="row g-0 align-items-center">
+                <div class="col-4">
+                  <img src="../images/items/orange.png" class="rounded-2 shadow-sm" alt="..."
+                    style="background-color: #FFE2E2; width: 128px; height: auto;">
+                </div>
+                <div class="col-8">
+                  <h5 class="fw-bold">Oranges(1KG)</h5>
+                  <h5 class="fw-regular">18th March 2022</h5>
+                  <a href="#"><span class="fw-bold text-success me-2">Sharma Confectionaries</span></a>
+                  <a href="#"><span class="fw-bold text-success">Sharma Confectionaries</span></a>
+                </div>
               </div>
             </div>
 
           </div>
 
+          <div class="col-4">
 
-          <div class="col-lg-4 col-md-4 col-4">
-
-            <a href=""><img src="../images/icons/options_for_reviews.svg" alt="" srcset="" style="float: right;"></a>
+            <a href=""><img src="../images/icons/options_for_reviews.svg" alt="" srcset="" class="float-end"></a>
 
           </div>
 
-
-
-          <div class="row col-lg-12 mt-4">
-            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-
-            <div class="row col-lg-12">
-              <h6 style="font-weight: bold;">Lorem ipsum dolor sit ametit.</h6>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio facilis eligendi consectetur
-                quibusdam recusandae, earum, eius quaerat ab vel nisi sequi mollitia praesentium placeat quasi
-                dignissimos aliquam tempora suscipit pariatur?
-                Iusto dolor dolores non. Nisi architecto placeat sed amet? Facere deleniti numquam, tempore placeat ea
-                soluta labore repudiandae, laborum commodi nobis quo minima eligendi! Vel dicta soluta doloremque aut
-                fugiat?
-              </p>
-            </div>
+          <div class="row col-12 my-2">
+            <div class="col-2 text-center"><a href=""><i class="fa fa-star checked" style="color:orange;"></i></a></div>
+            <div class="col-2 text-center"><a href=""><i class="fa fa-star checked" style="color:orange;"></i></a></div>
+            <div class="col-2 text-center"><a href=""><i class="fa fa-star checked" style="color:orange;"></i></a></div>
+            <div class="col-2 text-center"><a href=""><i class="fa fa-star checked" style="color:orange;"></i></a></div>
           </div>
 
-
-
-
-
-
-
+          <div class="col-12">
+            <h6 class="fw-bold">Lorem ipsum dolor sit ametit.</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio facilis eligendi consectetur
+              quibusdam recusandae, earum, eius quaerat ab vel nisi sequi mollitia praesentium placeat quasi
+              dignissimos aliquam tempora suscipit pariatur?
+              Iusto dolor dolores non. Nisi architecto placeat sed amet? Facere deleniti numquam, tempore placeat ea
+              soluta labore repudiandae, laborum commodi nobis quo minima eligendi! Vel dicta soluta doloremque aut
+              fugiat?
+            </p>
+          </div>
 
         </div>
+
       </div>
 
 
