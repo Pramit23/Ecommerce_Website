@@ -82,48 +82,472 @@
   </nav>
 
   <br><br>
-  <main class="container my-4">
+  <main class="container my-4 p-2">
 
 
     <!--Breadcrumb and Sort-->
 
-    <section class="col-12 justify-content-center align-items-center mx-auto">
+    <section class="row col-12 d-flex justify-content-center align-items-center mx-auto my-2">
 
-      <div class="row col-12 d-flex align-items-center justify-content-center mx-auto">
+      <div class="col-8">
 
-        <div class="col-8">
-
-          <nav
-            style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
-            aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-              <li class="breadcrumb-item " aria-current="page"><a href="../My_Profile/index.html">My Profile</a>
-              </li>
-              <li class="breadcrumb-item active fw-bold" aria-current="page"><a
-                  href="../My_Profile/Order_and_Returns.html">Order
-                  and Return</a>
-              </li>
-            </ol>
-          </nav>
-
-        </div>
-
-        <div class="col-4 align-items-end justify-content-end pe-4">
-          <a href="" style="float: right;"><img src="../images/icons/sort_for_order_and_returns.svg"
-              style="width: 6rem; height: auto;" alt=""></a>
-        </div>
+        <nav
+          style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+          aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+            <li class="breadcrumb-item " aria-current="page"><a href="../My_Profile/index.html">My Profile</a>
+            </li>
+            <li class="breadcrumb-item active fw-bold" aria-current="page"><a
+                href="../My_Profile/Order_and_Returns.html">Order
+                and Return</a>
+            </li>
+          </ol>
+        </nav>
 
       </div>
+
+      <div class="col-4">
+        <a href="" style="float: right;"><img src="../images/icons/sort_for_order_and_returns.svg"
+            style="width: 6rem; height: auto;" alt=""></a>
+      </div>
+
 
     </section>
 
 
     <!--Cards-->
-    <section class="container d-flex flex-wrap align-items-center justify-content-center p-2 my-2">
+    <section class="container d-flex flex-wrap align-items-center justify-content-center p-4 my-2">
 
+      <div class="m-2 card p-2">
+
+        <div class="row col-12 d-flex justify-content-center align-items-start my-3 mx-auto">
+
+          <div class="col-6">
+            <h5 class="text-success fw-bold">Order #51134</h5>
+            <h9 class="fw-regular">23rd Feb 2022,9.45 AM</h9>
+          </div>
+
+          <div class="col-6 text-end">
+            <button class="btn"><span>View Invoice</span></button>
+          </div>
+
+        </div>
+
+
+        <div class="card-body col-12 col-lg-12 text-lg-start text-start mx-auto">
+
+          <!-- Item 1 -->
+          <div class="row col-12 d-flex align-items-center mx-auto my-2">
+
+            <div class="col-4">
+              <img src="../images/items/orange.png" class="card-img"
+                style="background-color: #FFE2E2; border-radius: 0.50rem;">
+            </div>
+
+            <div class="col-8">
+
+              <h5 class="fw-bold text-start">Orange (1KG)</h5>
+              <h6 class="fw-regular">Fruit <span class="ps-2 fw-bold text-success text-start">Sharma
+                  Confectionaries</span>
+              </h6>
+
+              <div class="col-12 d-flex align-items-center mt-4">
+
+                <div class="col-6 text-start">
+                  <h4 class="fw-bold">$4.99</h4>
+                </div>
+
+                <div class="col-6 text-end">
+                  <h5 class="fw-bold"><span class="text-success">Qty:</span> 1</h5>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <hr class="lines">
+
+
+          <!-- Item 2 -->
+          <div class="row col-12 d-flex align-items-center mx-auto my-2">
+
+            <div class="col-4">
+              <img src="../images/items/Cauliflower.png" class="card-img"
+                style="background-color: #DEFFF1; border-radius: 0.50rem;">
+            </div>
+
+            <div class="col-8">
+
+              <h5 class="fw-bold text-start">Cauliflower (1KG)</h5>
+              <h6 class="fw-regular">Vegetable <span class="ps-2 fw-bold text-success text-start">Sharma
+                  Confectionaries</span>
+              </h6>
+
+              <div class="col-12 d-flex align-items-center mt-4">
+
+                <div class="col-6 text-start">
+                  <h4 class="fw-bold">$4.99</h4>
+                </div>
+
+                <div class="col-6 text-end">
+                  <h5 class="fw-bold"><span class="text-success">Qty:</span> 1</h5>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+        <!-- <p class="card-text mt-3 mb-3">Fruit</p> -->
+
+        <div class="row col-12 d-flex justify-content-center align-items-center mx-auto p-2">
+
+          <div class="col-6 text-start">
+            <h4 class="card-title fw-bold"><span class="text-success">Total:</span> $5.40
+            </h4>
+          </div>
+          <div class="col-6 text-end">
+            <button class="btn-paid"><i class="fa-solid fa-check"></i> Paid</button>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <div class="m-2 card p-2">
+
+        <div class="row col-12 d-flex justify-content-center align-items-start my-3 mx-auto">
+
+          <div class="col-6">
+            <h5 class="text-success fw-bold">Order #51134</h5>
+            <h9 class="fw-regular">23rd Feb 2022,9.45 AM</h9>
+          </div>
+
+          <div class="col-6 text-end">
+            <button class="btn"><span>View Invoice</span></button>
+          </div>
+
+        </div>
+
+
+        <div class="card-body col-12 col-lg-12 text-lg-start text-start mx-auto">
+
+          <!-- Item 1 -->
+          <div class="row col-12 d-flex align-items-center mx-auto my-2">
+
+            <div class="col-4">
+              <img src="../images/items/orange.png" class="card-img"
+                style="background-color: #FFE2E2; border-radius: 0.50rem;">
+            </div>
+
+            <div class="col-8">
+
+              <h5 class="fw-bold text-start">Orange (1KG)</h5>
+              <h6 class="fw-regular">Fruit <span class="ps-2 fw-bold text-success text-start">Sharma
+                  Confectionaries</span>
+              </h6>
+
+              <div class="col-12 d-flex align-items-center mt-4">
+
+                <div class="col-6 text-start">
+                  <h4 class="fw-bold">$4.99</h4>
+                </div>
+
+                <div class="col-6 text-end">
+                  <h5 class="fw-bold"><span class="text-success">Qty:</span> 1</h5>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <hr class="lines">
+
+
+          <!-- Item 2 -->
+          <div class="row col-12 d-flex align-items-center mx-auto my-2">
+
+            <div class="col-4">
+              <img src="../images/items/Cauliflower.png" class="card-img"
+                style="background-color: #DEFFF1; border-radius: 0.50rem;">
+            </div>
+
+            <div class="col-8">
+
+              <h5 class="fw-bold text-start">Cauliflower (1KG)</h5>
+              <h6 class="fw-regular">Vegetable <span class="ps-2 fw-bold text-success text-start">Sharma
+                  Confectionaries</span>
+              </h6>
+
+              <div class="col-12 d-flex align-items-center mt-4">
+
+                <div class="col-6 text-start">
+                  <h4 class="fw-bold">$4.99</h4>
+                </div>
+
+                <div class="col-6 text-end">
+                  <h5 class="fw-bold"><span class="text-success">Qty:</span> 1</h5>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+        <!-- <p class="card-text mt-3 mb-3">Fruit</p> -->
+
+        <div class="row col-12 d-flex justify-content-center align-items-center mx-auto p-2">
+
+          <div class="col-6 text-start">
+            <h4 class="card-title fw-bold"><span class="text-success">Total:</span> $5.40
+            </h4>
+          </div>
+          <div class="col-6 text-end">
+            <button class="btn-pending"><i class="fa-solid fa-circle-exclamation"></i> Pending</button>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <div class="m-2 card p-2">
+
+        <div class="row col-12 d-flex justify-content-center align-items-start my-3 mx-auto">
+
+          <div class="col-6">
+            <h5 class="text-success fw-bold">Order #51134</h5>
+            <h9 class="fw-regular">23rd Feb 2022,9.45 AM</h9>
+          </div>
+
+          <div class="col-6 text-end">
+            <button class="btn"><span>View Invoice</span></button>
+          </div>
+
+        </div>
+
+
+        <div class="card-body col-12 col-lg-12 text-lg-start text-start mx-auto">
+
+          <!-- Item 1 -->
+          <div class="row col-12 d-flex align-items-center mx-auto my-2">
+
+            <div class="col-4">
+              <img src="../images/items/orange.png" class="card-img"
+                style="background-color: #FFE2E2; border-radius: 0.50rem;">
+            </div>
+
+            <div class="col-8">
+
+              <h5 class="fw-bold text-start">Orange (1KG)</h5>
+              <h6 class="fw-regular">Fruit <span class="ps-2 fw-bold text-success text-start">Sharma
+                  Confectionaries</span>
+              </h6>
+
+              <div class="col-12 d-flex align-items-center mt-4">
+
+                <div class="col-6 text-start">
+                  <h4 class="fw-bold">$4.99</h4>
+                </div>
+
+                <div class="col-6 text-end">
+                  <h5 class="fw-bold"><span class="text-success">Qty:</span> 1</h5>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <hr class="lines">
+
+
+          <!-- Item 2 -->
+          <div class="row col-12 d-flex align-items-center mx-auto my-2">
+
+            <div class="col-4">
+              <img src="../images/items/Cauliflower.png" class="card-img"
+                style="background-color: #DEFFF1; border-radius: 0.50rem;">
+            </div>
+
+            <div class="col-8">
+
+              <h5 class="fw-bold text-start">Cauliflower (1KG)</h5>
+              <h6 class="fw-regular">Vegetable <span class="ps-2 fw-bold text-success text-start">Sharma
+                  Confectionaries</span>
+              </h6>
+
+              <div class="col-12 d-flex align-items-center mt-4">
+
+                <div class="col-6 text-start">
+                  <h4 class="fw-bold">$4.99</h4>
+                </div>
+
+                <div class="col-6 text-end">
+                  <h5 class="fw-bold"><span class="text-success">Qty:</span> 1</h5>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+        <!-- <p class="card-text mt-3 mb-3">Fruit</p> -->
+
+        <div class="row col-12 d-flex justify-content-center align-items-center mx-auto p-2">
+
+          <div class="col-6 text-start">
+            <h4 class="card-title fw-bold"><span class="text-success">Total:</span> $5.40
+            </h4>
+          </div>
+          <div class="col-6 text-end">
+            <button class="btn-return"><i class="fa-solid fa-xmark"></i> Returned</button>
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <div class="m-2 card p-2">
+
+        <div class="row col-12 d-flex justify-content-center align-items-start my-3 mx-auto">
+
+          <div class="col-6">
+            <h5 class="text-success fw-bold">Order #51134</h5>
+            <h9 class="fw-regular">23rd Feb 2022,9.45 AM</h9>
+          </div>
+
+          <div class="col-6 text-end">
+            <button class="btn"><span>View Invoice</span></button>
+          </div>
+
+        </div>
+
+
+        <div class="card-body col-12 col-lg-12 text-lg-start text-start mx-auto">
+
+          <!-- Item 1 -->
+          <div class="row col-12 d-flex align-items-center mx-auto my-2">
+
+            <div class="col-4">
+              <img src="../images/items/orange.png" class="card-img"
+                style="background-color: #FFE2E2; border-radius: 0.50rem;">
+            </div>
+
+            <div class="col-8">
+
+              <h5 class="fw-bold text-start">Orange (1KG)</h5>
+              <h6 class="fw-regular">Fruit <span class="ps-2 fw-bold text-success text-start">Sharma
+                  Confectionaries</span>
+              </h6>
+
+              <div class="col-12 d-flex align-items-center mt-4">
+
+                <div class="col-6 text-start">
+                  <h4 class="fw-bold">$4.99</h4>
+                </div>
+
+                <div class="col-6 text-end">
+                  <h5 class="fw-bold"><span class="text-success">Qty:</span> 1</h5>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <hr class="lines">
+
+
+          <!-- Item 2 -->
+          <div class="row col-12 d-flex align-items-center mx-auto my-2">
+
+            <div class="col-4">
+              <img src="../images/items/Cauliflower.png" class="card-img"
+                style="background-color: #DEFFF1; border-radius: 0.50rem;">
+            </div>
+
+            <div class="col-8">
+
+              <h5 class="fw-bold text-start">Cauliflower (1KG)</h5>
+              <h6 class="fw-regular">Vegetable <span class="ps-2 fw-bold text-success text-start">Sharma
+                  Confectionaries</span>
+              </h6>
+
+              <div class="col-12 d-flex align-items-center mt-4">
+
+                <div class="col-6 text-start">
+                  <h4 class="fw-bold">$4.99</h4>
+                </div>
+
+                <div class="col-6 text-end">
+                  <h5 class="fw-bold"><span class="text-success">Qty:</span> 1</h5>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+        <!-- <p class="card-text mt-3 mb-3">Fruit</p> -->
+
+        <div class="row col-12 d-flex justify-content-center align-items-center mx-auto p-2">
+
+          <div class="col-6 text-start">
+            <h4 class="card-title fw-bold"><span class="text-success">Total:</span> $5.40
+            </h4>
+          </div>
+          <div class="col-6 text-end">
+            <button class="btn-Info"><i class="fa-solid fa-circle-info"></i> In Progress</button>
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="container my-2">
+        <nav aria-label="Page navigation example col-12 col-lg-6  p-2">
+          <ul
+            class="list-group list-group-horizontal my-2 justify-content-center align-items-center justify-content-lg-end align-items-lg-end">
+            <li class="list-group-item"><i class="fa fa-angle-double-left"></i></li>
+            <li class="list-group-item" style="color: #53B175; font-weight: bold;">1</li>
+            <li class="list-group-item bg_info text-white">2</li>
+            <li class="list-group-item" style="color: #53B175; font-weight: bold;">3</li>
+            <li class="list-group-item" style="color: #53B175; font-weight: bold;">4</li>
+            <li class="list-group-item"><i class="fa fa-angle-double-right"></i></li>
+          </ul>
+        </nav>
+      </div>
 
     </section>
+
 
 
   </main>

@@ -7,21 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Ecommerce Website</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
-    integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous">
-    </script>
 
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
   <!--Google Fonts Link-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&family=Open+Sans:wght@300;700&display=swap"
-    rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,8 +24,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-  <!--Font Awesome Link-->
-  <script src="https://kit.fontawesome.com/02c69b64af.js" crossorigin="anonymous"></script>
+
+  <!--Fontawesome Link-->
+  <script src="https://kit.fontawesome.com/50217cdc33.js" crossorigin="anonymous"></script>
+
+
   <!--External CSS-->
   <link rel="stylesheet" href="../style.css">
 
@@ -43,428 +37,388 @@
 <body>
 
   <!--Bootstrap JS-->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 
 
-  <div class="fluid-container">
 
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow mb-auto bg-white fixed-top">
-
-      <a class="navbar-brand" href="../index.html">
-
-        <img src="../images/Logo.svg" width="110rem" height="auto" alt="">
-
-      </a>
-
-      <!--Button Toggler-->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-
+  <!--Navbar-->
+  <nav class="navbar bg-white navbar-expand-xl navbar-light shadow-sm fixed-top">
+    <div class="container">
+      <a href="../index.html" class="navbar-brand"><img src="../images/Logo.svg" alt="" srcset="" width="110rem"
+          height="auto"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas"
+        aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-
       </button>
+      <div class="offcanvas offcanvas-end p-2 text-white bg-white bg-opacity-80" id="navbarOffcanvas" tabindex="-1"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title fw-bold text-success" id="offcanvasNavbarLabel">Main Menu</h5>
+          <button type="button" class="btn-close bnt-lg btn-close-black text-reset" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div
+            class="navbar-nav justify-content-center align-items-center justify-content-lg-end flex-grow-1 px-auto mt-2">
+            <a class="nav-item nav-link active fw-bold fs-6" aria-current="page" href="#">
+              <i class="fas fa-shopping-cart pr-2"></i> My Cart</a>
+            <hr class="bg-black">
+            <a class="nav-item nav-link fw-regular text-black fs-6" href="#"><i class="fas fa-heart pr-2"></i>
+              Favorites</a></a>
+            <hr class="bg-black">
+            <a class="nav-item nav-link fw-regular text-black fs-6" href="#"><i class="fas fa-bell pr-2"></i>
+              Notifications</a>
+            <hr class="bg-black">
+            <a class="nav-item nav-link fw-regular text-black fs-6" href="#"><i class="fas fa-user pr-2"></i> My
+              Profile</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 1rem;">
 
-        <ul class="navbar-nav ml-auto px-auto  align-items-center">
+  <br>
+  <br>
+  <br>
 
-          <li class="nav-item ">
-
-            <a class="nav-link" href=""><i class="fas fa-shopping-cart pr-2"></i>My cart</a>
-
-          </li>
-          <hr>
-          <li class="nav-item">
-
-            <a class="nav-link" href="favorites.html"><i class="fas fa-heart pr-2"></i>Favorites</a>
-
-          </li>
-          <hr>
-          <li class="nav-item">
-
-            <a class="nav-link" href="notifications.html"><i class="fas fa-bell pr-2"></i>Notifications</a>
-
-          </li>
-          <hr>
-          <li class="nav-item active">
-
-            <a class="nav-link" href="../My_Profile/index.html"><i class="fas fa-user pr-2"></i>My Profile</a>
+  <main class="container rounded-2 mt-2 bg-white p-4 shadow mx-auto">
 
 
-          </li>
+    <!--Breadcrumb and Sort-->
+    <section class="row col-12 d-flex justify-content-center align-items-center mx-auto my-2 shadow p-2">
 
-        </ul>
+      <div class="col-8 float-start">
+        <h4 class="fw-bold mb-2">Profile Details</h4>
+        <nav
+          style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+          aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+            <li class="breadcrumb-item " aria-current="page"><a href="../My_Profile/index.html">My Profile</a>
+            </li>
+            <li class="breadcrumb-item active fw-bold" aria-current="page"><a
+                href="../My_Profile/Profile_Details.html">Profile Details</a>
+            </li>
+          </ol>
+        </nav>
 
       </div>
 
-    </nav>
-
-    <br>
-    <br>
-
-    <main class="container rounded-2 mt-4">
+      <div class="col-4">
+        <button class="float-end btn">Save Changes</button>
+      </div>
 
 
-      <!--Breadcrumb and Sort-->
+    </section>
+
+    <!--Edit Profile-->
+
+    <section class="my-4 col-lg-12 col-md-12 col-12 jumbotron shadow">
+
+      <div class="profile_background_image rounded-2 mb-2 mx-auto">
+
+      </div>
+
+      <div class="row col-12 mx-auto align-items-center my-4">
+
+        <div class="col-8">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="../images/UI faces/face_1.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-4">
+
+          <button class="btn-paid float-end">Edit Profile</button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--Followers,Following,Reviews-->
+
+    <section class="my-4 row col-12 jumbotron shadow align-items-center justify-content-center mx-auto">
+
+      <div class="col-lg-4 col-md-4 col-4 mx-auto align-items-lg-center justify-content-lg-center">
+
+        <h1 class="card-title text-lg-center" style="font-weight: bold;">16K</h4>
+          <h5 class="card-title text-lg-center" style="font-weight: 600; color: #53B175;">Followers</h5>
+
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-4 mx-auto align-items-lg-center justify-content-lg-center">
+
+        <h1 class="card-title text-lg-center" style="font-weight: bold;">16K</h1>
+        <h5 class="card-title text-lg-center" style="font-weight: 600; color: #53B175;">Following</h5>
+
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-4 mx-auto align-items-lg-center justify-content-lg-center">
+
+        <h1 class="card-title text-lg-center" style="font-weight: bold;">16K</h1>
+        <h5 class="card-title text-lg-center" style="font-weight: 600; color: #53B175;">Reviews</h5>
+
+      </div>
+
+    </section>
+
+    <!--People you follow-->
+
+    <section
+      class="mt-4 row col-lg-12 col-md-12 col-12 jumbotron shadow mx-auto align-items-lg-center justify-content-lg-center align-items-center justify-content-center">
+
+      <div class="row col-lg-8 col-md-8 col-4 mx-auto">
+        <h4 style="font-weight: bold; float: left;">People you follow</h4>
+      </div>
+
+      <div class="col-lg-4 col-md-4 col-4 mx-auto">
+        <h6 style="font-weight: 600; float: right;"><a href="" style=" color: #53B175;"><u>Discover more</u></a>
+        </h6>
+      </div>
 
       <div
-        class="col-lg-12 col-md-12 col-12 justify-content-lg-center align-items-lg-center justify-content-center align-items-center">
+        class="row col-lg-12 col-12 col-md-12 mx-auto justify-content-center align-items-center justify-content-lg-center align-items-lg-center mx-auto">
 
-        <div class="row p-4">
-          <div class=" col-md-8 col-8 col-lg-8 align-items-lg-start justify-content-lg-start" style="float: left;">
-            <h4 style="font-weight: bold;">Profile Details</h4>
-            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-                <li class="breadcrumb-item"><a href="../My_Profile/index.html">Profile</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Order & Returns</li>
-              </ol>
-            </nav>
-          </div>
-          <div class="col-lg-4 col-md-4 col-4 align-items-lg-end justify-content-lg-end pr-4">
-
-            <button style="float: right;" class="btn btn-lg w-75 shadow">Save</button>
-
-          </div>
+        <div class="row col-2 col-lg-2 col-md-2">
+          <a href="" class="rounded-circle img-thumbnail"><img src="../images/UI faces/face_1.jpg" alt="" width="128px"
+              height="auto" style="border-radius: 50%;"></a>
         </div>
+
+        <div class="row col-2 col-lg-2 col-md-2">
+          <a href="" class="rounded-circle img-thumbnail"><img src="../images/UI faces/face_2.jpg" alt="" width="128px"
+              height="auto" style="border-radius: 50%;"></a>
+        </div>
+
+        <div class="row col-2 col-lg-2 col-md-2">
+          <a href="" class="rounded-circle img-thumbnail"><img src="../images/UI faces/face_2.jpg" alt="" width="128px"
+              height="auto" style="border-radius: 50%;"></a>
+        </div>
+
+        <div class="row col-2 col-lg-2 col-md-2">
+          <a href="" class="rounded-circle img-thumbnail"><img src="../images/UI faces/face_1.jpg" alt="" width="128px"
+              height="auto" style="border-radius: 50%;"></a>
+        </div>
+
 
       </div>
 
-      <!--Edit Profile-->
-      <div class="container">
+    </section>
 
-        <div class="mt-4 col-lg-12 col-md-12 col-12 jumbotron shadow">
+    <!--Profile Description-->
 
-          <img src="../images/landscape.jpg" alt=""
-            style="background-size:cover; width: 100%; height: 25%; border-radius: 1em; box-shadow: inset #2b2c2b5b;">
+    <section
+      class="mt-4 row col-lg-12 col-md-12 col-12 jumbotron shadow align-items-lg-center justify-content-lg-center mx-auto">
 
-          <div class="row col-lg-12 bg-white align-items-lg-center align-items-center mx-auto"
-            style="margin-top: 2em; margin-bottom: 1.5em;">
-
-            <div class="col-lg-2 col-md-2 col-2 mt-2" style=" z-index: 999;">
-              <img src="../images/UI faces/face_1.jpg" alt="" srcset=""
-                style="width: 9rem; height: auto; position: relative;border-radius: 15%;" class="shadow">
-              <!-- <img src="" alt="" style="width: 128px; height: auto;"><i class="fas fa-camera" style="z-index: 9; margin: 20px; color: rgb(109, 231, 150);"></i></img> -->
-            </div>
-
-            <div class="col-lg-6 col-md-4 col-4">
-
-              <h4 class="card-title" style="font-weight: bold;">Marcus Torff</h4>
-              <h5 class="card-title" style="font-weight: 600; color: #53B175;">Verfied Customer</h5>
-
-            </div>
-
-            <div class="col-lg-4 col-md-4 col-4">
-              <button class="btn w-50 p-2 border-2s shadow"
-                style="float:right; background-color: #E5F4EA; border-color: #53B175; color:#53B175; font-weight: bold; cursor: pointer;">Edit
-                Profile</button>
-            </div>
-
-          </div>
-
-        </div>
-
+      <div class="col-lg-12 col-md-12 col-12">
+        <h4 style="font-weight: bold; " class="card-title">Profile Description</h4>
+      </div>
+      <div class="col-lg-12 col-md-12 col-12">
+        <p class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, perferendis?
+          Sapiente ipsa deleniti
+          quasi. Beatae doloribus exercitationem repellendus laboriosam illum quidem voluptate, natus consequuntur
+          ipsum nemo non assumenda soluta tenetur.
+          Dolorem expedita veniam accusamus, autem illum cum id provident. Voluptate illo tenetur, at doloremque
+          officiis repudiandae, distinctio delectus animi repellendus quaerat numquam optio nam dolor minus vero?
+          Quod, blanditiis aut.</p>
       </div>
 
-      <!--Followers,Following,Reviews-->
-      <div class="container">
+    </section>
 
-        <div
-          class="mt-4 row col-lg-12 col-md-12 col-12 jumbotron shadow mx-auto align-items-lg-center justify-content-lg-center mx-auto">
 
-          <div class="col-lg-4 col-md-4 col-4 mx-auto align-items-lg-center justify-content-lg-center">
+    <!--Reviews and Activities-->
 
-            <h1 class="card-title text-lg-center" style="font-weight: bold;">16K</h4>
-              <h5 class="card-title text-lg-center" style="font-weight: 600; color: #53B175;">Followers</h5>
+    <section class="my-4 col-12 jumbotron shadow">
 
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-4 mx-auto align-items-lg-center justify-content-lg-center">
-
-            <h1 class="card-title text-lg-center" style="font-weight: bold;">16K</h1>
-            <h5 class="card-title text-lg-center" style="font-weight: 600; color: #53B175;">Following</h5>
-
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-4 mx-auto align-items-lg-center justify-content-lg-center">
-
-            <h1 class="card-title text-lg-center" style="font-weight: bold;">16K</h1>
-            <h5 class="card-title text-lg-center" style="font-weight: 600; color: #53B175;">Reviews</h5>
-
-          </div>
-
-        </div>
-
+      <div class="col-lg-12 col-12 mb-4">
+        <h4 style="font-weight: bold; " class="card-title">Reviews & Activities</h4>
       </div>
+      <div class="scroll">
 
-      <!--People you follow-->
-      <div class="container">
+        <!--Review 1-->
 
-        <div
-          class="mt-4 row col-lg-12 col-md-12 col-12 jumbotron shadow mx-auto align-items-lg-center justify-content-lg-center align-items-center justify-content-center">
+        <div class="row col-lg-12 col-md-12 col-12 mt-2 justify-content-lg-center align-items-lg-start mx-auto">
 
-          <div class="row col-lg-8 col-md-8 col-4 mx-auto">
-            <h4 style="font-weight: bold; float: left;">People you follow</h4>
+          <div class="col-lg-8 col-md-8 col-8">
+
+            <img src="../images/items/orange.png" alt=""
+              style="background-color: #FFE2E2; width: 6rem; height:auto; border-radius: 15%; float: left;">
+
+            <div class="row col-lg-4">
+              <h5 style="font-weight: 600;">Oranges(1KG)</h5>
+              <h6 style="font-weight: 400; color: #829187;" class="mr-2">18th Aug 2021</h6>
+              <div class="col-lg-2 mx-auto">
+                <h6 style="font-weight: bold; color: #53B175;" class="row">Sharma Confectionaries</h6>
+                <h6 style="font-weight: bold; color: #53B175;" class="row">Sharma Confectionaries</h6>
+              </div>
+            </div>
+
           </div>
 
-          <div class="col-lg-4 col-md-4 col-4 mx-auto">
-            <h6 style="font-weight: 600; float: right;"><a href="" style=" color: #53B175;"><u>Discover more</u></a>
-            </h6>
+
+          <div class="col-lg-4 col-md-4 col-4">
+
+            <a href=""><img src="../images/icons/options_for_reviews.svg" alt="" srcset="" style="float: right;"></a>
+
           </div>
 
-          <div
-            class="row col-lg-12 col-12 col-md-12 mx-auto justify-content-center align-items-center justify-content-lg-center align-items-lg-center mx-auto">
 
-            <div class="row col-2 col-lg-2 col-md-2">
-              <a href="" class="rounded-circle img-thumbnail"><img src="../images/UI faces/face_1.jpg" alt=""
-                  width="128px" height="auto" style="border-radius: 50%;"></a>
+
+          <div class="row col-lg-12 mt-4">
+            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
+            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
+            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
+            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
+            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
+
+            <div class="row col-lg-12">
+              <h6 style="font-weight: bold;">Lorem ipsum dolor sit ametit.</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio facilis eligendi consectetur
+                quibusdam recusandae, earum, eius quaerat ab vel nisi sequi mollitia praesentium placeat quasi
+                dignissimos aliquam tempora suscipit pariatur?
+                Iusto dolor dolores non. Nisi architecto placeat sed amet? Facere deleniti numquam, tempore placeat ea
+                soluta labore repudiandae, laborum commodi nobis quo minima eligendi! Vel dicta soluta doloremque aut
+                fugiat?
+              </p>
             </div>
-
-            <div class="row col-2 col-lg-2 col-md-2">
-              <a href="" class="rounded-circle img-thumbnail"><img src="../images/UI faces/face_2.jpg" alt=""
-                  width="128px" height="auto" style="border-radius: 50%;"></a>
-            </div>
-
-            <div class="row col-2 col-lg-2 col-md-2">
-              <a href="" class="rounded-circle img-thumbnail"><img src="../images/UI faces/face_2.jpg" alt=""
-                  width="128px" height="auto" style="border-radius: 50%;"></a>
-            </div>
-
-            <div class="row col-2 col-lg-2 col-md-2">
-              <a href="" class="rounded-circle img-thumbnail"><img src="../images/UI faces/face_1.jpg" alt=""
-                  width="128px" height="auto" style="border-radius: 50%;"></a>
-            </div>
-
-
           </div>
 
         </div>
 
-      </div>
+        <hr class="lines">
 
-      <!--Profile Description-->
-      <div class="container">
+        <!--Review 2-->
 
-        <div
-          class="mt-4 row col-lg-12 col-md-12 col-12 jumbotron shadow align-items-lg-center justify-content-lg-center mx-auto">
+        <div class="row col-lg-12 col-md-12 col-12 mt-2 justify-content-lg-center align-items-lg-start mx-auto">
 
-          <div class="col-lg-12 col-md-12 col-12">
-            <h4 style="font-weight: bold; " class="card-title">Profile Description</h4>
+          <div class="col-lg-8 col-md-8 col-8">
+
+            <img src="../images/items/orange.png" alt=""
+              style="background-color: #FFE2E2; width: 6rem; height:auto; border-radius: 15%; float: left;">
+
+            <div class="row col-lg-4">
+              <h5 style="font-weight: 600;">Oranges(1KG)</h5>
+              <h6 style="font-weight: 400; color: #829187;" class="mr-2">18th Aug 2021</h6>
+              <div class="col-lg-2 mx-auto">
+                <h6 style="font-weight: bold; color: #53B175;" class="row">Sharma Confectionaries</h6>
+                <h6 style="font-weight: bold; color: #53B175;" class="row">Sharma Confectionaries</h6>
+              </div>
+            </div>
+
           </div>
-          <div class="col-lg-12 col-md-12 col-12">
-            <p class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, perferendis?
-              Sapiente ipsa deleniti
-              quasi. Beatae doloribus exercitationem repellendus laboriosam illum quidem voluptate, natus consequuntur
-              ipsum nemo non assumenda soluta tenetur.
-              Dolorem expedita veniam accusamus, autem illum cum id provident. Voluptate illo tenetur, at doloremque
-              officiis repudiandae, distinctio delectus animi repellendus quaerat numquam optio nam dolor minus vero?
-              Quod, blanditiis aut.</p>
+
+
+          <div class="col-lg-4 col-md-4 col-4">
+
+            <a href=""><img src="../images/icons/options_for_reviews.svg" alt="" srcset="" style="float: right;"></a>
+
+          </div>
+
+
+
+          <div class="row col-lg-12 mt-4">
+            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
+            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
+            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
+            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
+            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
+
+            <div class="row col-lg-12">
+              <h6 style="font-weight: bold;">Lorem ipsum dolor sit ametit.</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio facilis eligendi consectetur
+                quibusdam recusandae, earum, eius quaerat ab vel nisi sequi mollitia praesentium placeat quasi
+                dignissimos aliquam tempora suscipit pariatur?
+                Iusto dolor dolores non. Nisi architecto placeat sed amet? Facere deleniti numquam, tempore placeat ea
+                soluta labore repudiandae, laborum commodi nobis quo minima eligendi! Vel dicta soluta doloremque aut
+                fugiat?
+              </p>
+            </div>
           </div>
 
         </div>
 
-      </div>
-
-      <!--Reviews and Activities-->
-      <div class="container">
-
-        <div
-          class="mt-4 row col-lg-12 col-md-12 col-12 jumbotron shadow mx-auto align-items-lg-center justify-content-lg-center mx-auto">
-
-          <div class="col-lg-12 col-md-12 col-12 mb-4">
-            <h4 style="font-weight: bold; " class="card-title">Reviews & Activities</h4>
-          </div>
-
-          <!--Review 1-->
-
-          <div class="row col-lg-12 col-md-12 col-12 mt-2 justify-content-lg-center align-items-lg-start mx-auto">
-
-            <div class="col-lg-8 col-md-8 col-8">
-
-              <img src="../images/items/orange.png" alt=""
-                style="background-color: #FFE2E2; width: 6rem; height:auto; border-radius: 15%; float: left;">
-
-              <div class="row col-lg-4">
-                <h5 style="font-weight: 600;">Oranges(1KG)</h5>
-                <h6 style="font-weight: 400; color: #829187;" class="mr-2">18th Aug 2021</h6>
-                <div class="col-lg-2 mx-auto">
-                  <h6 style="font-weight: bold; color: #53B175;" class="row">Sharma Confectionaries</h6>
-                  <h6 style="font-weight: bold; color: #53B175;" class="row">Sharma Confectionaries</h6>
-                </div>
-              </div>
-
-            </div>
+        <hr class="lines">
 
 
-            <div class="col-lg-4 col-md-4 col-4">
+        <!--Review 3-->
 
-              <a href=""><img src="../images/icons/options_for_reviews.svg" alt="" srcset="" style="float: right;"></a>
+        <div class="row col-lg-12 col-md-12 col-12 mt-2 justify-content-lg-center align-items-lg-start mx-auto">
 
-            </div>
+          <div class="col-lg-8 col-md-8 col-8">
 
+            <img src="../images/items/orange.png" alt=""
+              style="background-color: #FFE2E2; width: 6rem; height:auto; border-radius: 15%; float: left;">
 
-
-            <div class="row col-lg-12 mt-4">
-              <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-              <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-              <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-              <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-              <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-
-              <div class="row col-lg-12">
-                <h6 style="font-weight: bold;">Lorem ipsum dolor sit ametit.</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio facilis eligendi consectetur
-                  quibusdam recusandae, earum, eius quaerat ab vel nisi sequi mollitia praesentium placeat quasi
-                  dignissimos aliquam tempora suscipit pariatur?
-                  Iusto dolor dolores non. Nisi architecto placeat sed amet? Facere deleniti numquam, tempore placeat ea
-                  soluta labore repudiandae, laborum commodi nobis quo minima eligendi! Vel dicta soluta doloremque aut
-                  fugiat?
-                </p>
+            <div class="row col-lg-4">
+              <h5 style="font-weight: 600;">Oranges(1KG)</h5>
+              <h6 style="font-weight: 400; color: #829187;" class="mr-2">18th Aug 2021</h6>
+              <div class="col-lg-2 mx-auto">
+                <h6 style="font-weight: bold; color: #53B175;" class="row">Sharma Confectionaries</h6>
+                <h6 style="font-weight: bold; color: #53B175;" class="row">Sharma Confectionaries</h6>
               </div>
             </div>
-
-
-
-
-
-
-
-
-          </div>
-
-          <hr style="color: black;">
-
-          <!--Review 2-->
-
-          <div class="row col-lg-12 col-md-12 col-12 mt-2 justify-content-lg-center align-items-lg-start mx-auto">
-
-            <div class="col-lg-8 col-md-8 col-8">
-
-              <img src="../images/items/orange.png" alt=""
-                style="background-color: #FFE2E2; width: 6rem; height:auto; border-radius: 15%; float: left;">
-
-              <div class="row col-lg-4">
-                <h5 style="font-weight: 600;">Oranges(1KG)</h5>
-                <h6 style="font-weight: 400; color: #829187;" class="mr-2">18th Aug 2021</h6>
-                <div class="col-lg-2 mx-auto">
-                  <h6 style="font-weight: bold; color: #53B175;" class="row">Sharma Confectionaries</h6>
-                  <h6 style="font-weight: bold; color: #53B175;" class="row">Sharma Confectionaries</h6>
-                </div>
-              </div>
-
-            </div>
-
-
-            <div class="col-lg-4 col-md-4 col-4">
-
-              <a href=""><img src="../images/icons/options_for_reviews.svg" alt="" srcset="" style="float: right;"></a>
-
-            </div>
-
-
-
-            <div class="row col-lg-12 mt-4">
-              <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-              <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-              <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-              <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-              <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-
-              <div class="row col-lg-12">
-                <h6 style="font-weight: bold;">Lorem ipsum dolor sit ametit.</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio facilis eligendi consectetur
-                  quibusdam recusandae, earum, eius quaerat ab vel nisi sequi mollitia praesentium placeat quasi
-                  dignissimos aliquam tempora suscipit pariatur?
-                  Iusto dolor dolores non. Nisi architecto placeat sed amet? Facere deleniti numquam, tempore placeat ea
-                  soluta labore repudiandae, laborum commodi nobis quo minima eligendi! Vel dicta soluta doloremque aut
-                  fugiat?
-                </p>
-              </div>
-            </div>
-
-
-
-
-
-
-
 
           </div>
 
 
-          <hr style="color: black;">
+          <div class="col-lg-4 col-md-4 col-4">
 
-          <!--Review 3-->
-
-          <div class="row col-lg-12 col-md-12 col-12 mt-2 justify-content-lg-center align-items-lg-start mx-auto">
-
-            <div class="col-lg-8 col-md-8 col-8">
-
-              <img src="../images/items/orange.png" alt=""
-                style="background-color: #FFE2E2; width: 6rem; height:auto; border-radius: 15%; float: left;">
-
-              <div class="row col-lg-4">
-                <h5 style="font-weight: 600;">Oranges(1KG)</h5>
-                <h6 style="font-weight: 400; color: #829187;" class="mr-2">18th Aug 2021</h6>
-                <div class="col-lg-2 mx-auto">
-                  <h6 style="font-weight: bold; color: #53B175;" class="row">Sharma Confectionaries</h6>
-                  <h6 style="font-weight: bold; color: #53B175;" class="row">Sharma Confectionaries</h6>
-                </div>
-              </div>
-
-            </div>
-
-
-            <div class="col-lg-4 col-md-4 col-4">
-
-              <a href=""><img src="../images/icons/options_for_reviews.svg" alt="" srcset="" style="float: right;"></a>
-
-            </div>
-
-
-
-            <div class="row col-lg-12 mt-4">
-              <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-              <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-              <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-              <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-              <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
-
-              <div class="row col-lg-12">
-                <h6 style="font-weight: bold;">Lorem ipsum dolor sit ametit.</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio facilis eligendi consectetur
-                  quibusdam recusandae, earum, eius quaerat ab vel nisi sequi mollitia praesentium placeat quasi
-                  dignissimos aliquam tempora suscipit pariatur?
-                  Iusto dolor dolores non. Nisi architecto placeat sed amet? Facere deleniti numquam, tempore placeat ea
-                  soluta labore repudiandae, laborum commodi nobis quo minima eligendi! Vel dicta soluta doloremque aut
-                  fugiat?
-                </p>
-              </div>
-            </div>
-
-
-
-
-
-
-
+            <a href=""><img src="../images/icons/options_for_reviews.svg" alt="" srcset="" style="float: right;"></a>
 
           </div>
+
+
+
+          <div class="row col-lg-12 mt-4">
+            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
+            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
+            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
+            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
+            <a href=""><span class="fa fa-star checked" style="color:orange;"></span></a>
+
+            <div class="row col-lg-12">
+              <h6 style="font-weight: bold;">Lorem ipsum dolor sit ametit.</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio facilis eligendi consectetur
+                quibusdam recusandae, earum, eius quaerat ab vel nisi sequi mollitia praesentium placeat quasi
+                dignissimos aliquam tempora suscipit pariatur?
+                Iusto dolor dolores non. Nisi architecto placeat sed amet? Facere deleniti numquam, tempore placeat ea
+                soluta labore repudiandae, laborum commodi nobis quo minima eligendi! Vel dicta soluta doloremque aut
+                fugiat?
+              </p>
+            </div>
+          </div>
+
+
+
+
+
 
 
 
         </div>
-
       </div>
 
-  </div>
 
+
+    </section>
 
   </main>
 

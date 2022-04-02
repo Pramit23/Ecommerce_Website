@@ -9,20 +9,10 @@
     <title>Ecommerce Website</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
-        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous">
-    </script>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!--Google Fonts Link-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat&family=Open+Sans:wght@300;700&display=swap"
-        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,8 +25,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
-    <!--Font Awesome Link-->
-    <script src="https://kit.fontawesome.com/02c69b64af.js" crossorigin="anonymous"></script>
+    <!--Fontawesome Link-->
+    <script src="https://kit.fontawesome.com/50217cdc33.js" crossorigin="anonymous"></script>
+
 
     <!--External CSS-->
     <link rel="stylesheet" href="style.css">
@@ -46,87 +37,68 @@
 <body>
 
     <!--Bootstrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 
 
-    <div class="container">
-        <!--Navbar-->
-        <nav class="navbar navbar-expand-lg navbar-light  mb-9">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../images/Logo.svg" width="110rem" height="auto" alt="">
-            </a>
-            <!--Button Toggler-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!--Navbar-->
+    <nav class="navbar bg-white navbar-expand-xl navbar-light shadow-sm fixed-top mb-4">
+        <div class="container">
+            <a href="../index.html" class="navbar-brand"><img src="../images/Logo.svg" alt="" srcset="" width="110rem"
+                    height="auto"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas"
+                aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent"
-                style="font-size: 1rem;">
-                <ul class="navbar-nav ml-auto px-auto  align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href=""><i class="fas fa-shopping-cart pr-2"></i>My cart</a>
-                    </li>
-                    <hr>
-                    <li class="nav-item">
-                        <a class="nav-link" href="favorites.html"><i class="fas fa-heart pr-2"></i>Favorites</a>
-                    </li>
-                    <hr>
-                    <li class="nav-item">
-                        <a class="nav-link" href="notifications.html"><i class="fas fa-bell pr-2"></i>Notifications</a>
-                    </li>
-                    <hr>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="../My_Profile/index.html"><i class="fas fa-user pr-2"></i>My
+            <div class="offcanvas offcanvas-end p-2 text-white bg-white bg-opacity-80" id="navbarOffcanvas"
+                tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title fw-bold text-success" id="offcanvasNavbarLabel">Main Menu</h5>
+                    <button type="button" class="btn-close bnt-lg btn-close-black text-reset"
+                        data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div
+                        class="navbar-nav justify-content-center align-items-center justify-content-lg-end flex-grow-1 px-auto mt-2">
+                        <a class="nav-item nav-link active fw-bold fs-6" aria-current="page" href="#">
+                            <i class="fas fa-shopping-cart pr-2"></i> My Cart</a>
+                        <hr class="bg-black">
+                        <a class="nav-item nav-link fw-regular text-black fs-6" href="../favorites.html"><i
+                                class="fas fa-heart pr-2"></i>
+                            Favorites</a></a>
+                        <hr class="bg-black">
+                        <a class="nav-item nav-link fw-regular text-black fs-6" href="../notifications.html"><i
+                                class="fas fa-bell pr-2"></i>
+                            Notifications</a>
+                        <hr class="bg-black">
+                        <a class="nav-item nav-link fw-regular text-secondary fs-6" href="../My_Profile/index.html"><i
+                                class="fas fa-user pr-2"></i> My
                             Profile</a>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
 
+    <br><br>
 
-    <br>
-    <br>
-
-    <main class="container rounded-2 mt-4 mx-auto">
+    <main class="container rounded-2 my-4 mx-auto">
 
 
         <!-- Change View -->
 
-        <div class="col-lg-12 col-md-12 col-12 justify-content-center align-items-center mx-auto">
+        <div class="col-12 justify-content-center align-items-center mx-auto">
 
-            <div class="row container p-4">
+            <div class="row col-12 p-4 mx-2">
 
-                <div class="col-lg-6 col-6">
-                    <h4 style="font-weight: bold;">Favorites</h4>
+                <div class="col-6">
+                    <h4 class="fw-bold">Favorites</h4>
                 </div>
 
-                <div class="col-lg-6 col-6">
+                <div class="col-6 text-end">
 
-                    <a href="" style="float: right;">
-
-                        <div class="btn-group">
-
-                            <button class="btn btn-white dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                <span style="font-weight: bold; color: #53b175;">Grid</span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li class="px-3 mx-auto my-0">Arm</li>
-                                <hr>
-                                <li class="px-3 mx-auto my-0">Arm</li>
-                                <hr>
-                                <li class="px-3 mx-auto my-0">Arm</li>
-                            </ul>
-
-                        </div>
-
-                    </a>
+                    <button class="btn">Sign</button>
 
                 </div>
 
@@ -137,43 +109,44 @@
 
         <!--Nav Links-->
 
-        <div class="container my-4">
+        <section class="container bg-white mx-auto p-4 shadow-sm">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="navbar-link active fw-bold text-success" aria-current="page" href="#">Products</a>
+                </li>
+                <div class="px-2"></div>
+                <li class="nav-item">
+                    <a class="navbar-link fw-bold text-success" href="#">Sellers</a>
+                </li>
 
-            <div class="row justify-content-center justify-content-lg-center">
-                <div class="col-6 col-lg-6 text-center">
-                    <a href="" class="text-success fw-bold"><span style="font-weight: bold;">Products</span></a>
-                </div>
-                <div class="col-6 col-lg-6 text-center">
-                    <a href="" class="text-success fw-bold"><span style="font-weight: bold;">Sellers</span></a>
-                </div>
-            </div>
-
-        </div>
+            </ul>
+        </section>
 
         <!--Cards Grid-->
 
-        <div class="container d-flex flex-wrap align-items-center align-items-lg-center justify-content-center">
-
-            <div class="m-2 px-auto card  align-items-center justify-content-center">
+        <section class="container scroll d-flex flex-wrap align-items-center justify-content-center p-2 my-4 mx-auto">
 
 
-                <dic class="card-header">
-
-                    <h4 style="color: #53B175;float: right;"><i class="fa-solid fa-ellipsis"></i></h4>
-
-                </dic>
+            <div class="m-2 p-2 card">
 
 
-                <div class="p-auto card-img"
+                <div class="col-12 d-flex justify-content-end pe-2">
+
+                    <button class="btn-popover ms-2 mb-2" data-bs-container="body" data-bs-toggle="popover"
+                        data-bs-placement="bottom" data-bs-content="Bottom popover"><i
+                            class="fa-solid fa-ellipsis fa-2x"></i></button>
+
+                </div>
+
+
+                <div class="p-2 card-img col-12"
                     style="background-color: #FFE2E2; width: auto; height:auto; border-radius: 1rem;">
 
                     <img src="images/items/orange.png" class="card-img-top" alt="...">
 
                 </div>
 
-
-
-                <div class="card-body justify-content-start mxauto">
+                <div class="card-body text-start me-4 col-12">
 
                     <h5 class="card-title" style="font-weight: bold;">Orange (1 KG)</h5>
                     <p class="card-text">Fruit</p>
@@ -183,113 +156,26 @@
 
             </div>
 
-            <div class="m-2 px-auto card  align-items-center justify-content-center">
+            <div class="m-2 p-2 card">
 
 
-                <dic class="card-header">
+                <div class="col-12 d-flex justify-content-end pe-2">
 
-                    <h4 style="color: #53B175;float: right;"><i class="fa-solid fa-ellipsis"></i></h4>
-
-                </dic>
-
-
-                <div class="p-auto card-img"
-                    style="background-color: #DEFFF1; width: auto; height:auto; border-radius: 1rem;">
-
-                    <img src="images/items/Cauliflower.png" class="card-img-top" alt="...">
+                    <button class="btn-popover ms-2 mb-2" data-bs-container="body" data-bs-toggle="popover"
+                        data-bs-placement="bottom" data-bs-content="Bottom popover"><i
+                            class="fa-solid fa-ellipsis fa-2x"></i></button>
 
                 </div>
 
 
-
-                <div class="card-body justify-content-start mxauto">
-
-                    <h5 class="card-title" style="font-weight: bold;">Cauliflower (1 KG)</h5>
-                    <p class="card-text">Vegetable</p>
-
-                </div>
-
-
-            </div>
-
-            <div class="m-2 px-auto card  align-items-center justify-content-center">
-
-
-                <dic class="card-header">
-
-                    <h4 style="color: #53B175;float: right;"><i class="fa-solid fa-ellipsis"></i></h4>
-
-                </dic>
-
-
-                <div class="p-auto card-img"
-                    style="background-color: #DDF5FF; width: auto; height:auto; border-radius: 1rem;">
-
-                    <img src="images/items/Chicken.png" class="card-img-top" alt="...">
-
-                </div>
-
-
-
-                <div class="card-body justify-content-start mxauto">
-
-                    <h5 class="card-title" style="font-weight: bold;">Orange(1 KG)</h5>
-                    <p class="card-text">Fruit</p>
-
-                </div>
-
-
-            </div>
-
-            <div class="m-2 px-auto card  align-items-center justify-content-center">
-
-
-                <dic class="card-header">
-
-                    <h4 style="color: #53B175;float: right;"><i class="fa-solid fa-ellipsis"></i></h4>
-
-                </dic>
-
-
-                <div class="p-auto card-img"
-                    style="background-color: #FFE2B7; width: auto; height:auto; border-radius: 1rem;">
-
-                    <img src="images/items/Almond-Milk.png" class="card-img-top" alt="...">
-
-                </div>
-
-
-
-                <div class="card-body justify-content-start mxauto">
-
-                    <h5 class="card-title" style="font-weight: bold;">Orange(1 KG)</h5>
-                    <p class="card-text">Fruit</p>
-
-                </div>
-
-
-            </div>
-
-            <div class="m-2 px-auto card  align-items-center justify-content-center">
-
-
-                <dic class="card-header">
-
-                    <h4 style="color: #53B175;float: right;"><i class="fa-solid fa-ellipsis"></i></h4>
-
-                </dic>
-
-
-                <div class="p-auto card-img"
+                <div class="p-2 card-img col-12"
                     style="background-color: #FFE2E2; width: auto; height:auto; border-radius: 1rem;">
 
                     <img src="images/items/orange.png" class="card-img-top" alt="...">
 
                 </div>
 
-
-
-                <div class="card-body justify-content-start mxauto">
+                <div class="card-body text-start me-4 col-12">
 
                     <h5 class="card-title" style="font-weight: bold;">Orange (1 KG)</h5>
                     <p class="card-text">Fruit</p>
@@ -299,57 +185,28 @@
 
             </div>
 
-            <div class="m-2 px-auto card  align-items-center justify-content-center">
+            <div class="m-2 p-2 card">
 
 
-                <dic class="card-header">
+                <div class="col-12 d-flex justify-content-end pe-2">
 
-                    <h4 style="color: #53B175;float: right;"><i class="fa-solid fa-ellipsis"></i></h4>
-
-                </dic>
-
-
-                <div class="p-auto card-img"
-                    style="background-color: #DEFFF1; width: auto; height:auto; border-radius: 1rem;">
-
-                    <img src="images/items/Cauliflower.png" class="card-img-top" alt="...">
+                    <button class="btn-popover ms-2 mb-2" data-bs-container="body" data-bs-toggle="popover"
+                        data-bs-placement="bottom" data-bs-content="Bottom popover"><i
+                            class="fa-solid fa-ellipsis fa-2x"></i></button>
 
                 </div>
 
 
+                <div class="p-2 card-img col-12"
+                    style="background-color: #FFE2E2; width: auto; height:auto; border-radius: 1rem;">
 
-                <div class="card-body justify-content-start mxauto">
-
-                    <h5 class="card-title" style="font-weight: bold;">Cauliflower (1 KG)</h5>
-                    <p class="card-text">Vegetable</p>
-
-                </div>
-
-
-            </div>
-
-            <div class="m-2 px-auto card  align-items-center justify-content-center">
-
-
-                <dic class="card-header">
-
-                    <h4 style="color: #53B175;float: right;"><i class="fa-solid fa-ellipsis"></i></h4>
-
-                </dic>
-
-
-                <div class="p-auto card-img"
-                    style="background-color: #DDF5FF; width: auto; height:auto; border-radius: 1rem;">
-
-                    <img src="images/items/Chicken.png" class="card-img-top" alt="...">
+                    <img src="images/items/orange.png" class="card-img-top" alt="...">
 
                 </div>
 
+                <div class="card-body text-start me-4 col-12">
 
-
-                <div class="card-body justify-content-start mxauto">
-
-                    <h5 class="card-title" style="font-weight: bold;">Orange(1 KG)</h5>
+                    <h5 class="card-title" style="font-weight: bold;">Orange (1 KG)</h5>
                     <p class="card-text">Fruit</p>
 
                 </div>
@@ -357,28 +214,28 @@
 
             </div>
 
-            <div class="m-2 px-auto card  align-items-center justify-content-center">
+            <div class="m-2 p-2 card">
 
 
-                <dic class="card-header">
+                <div class="col-12 d-flex justify-content-end pe-2">
 
-                    <h4 style="color: #53B175;float: right;"><i class="fa-solid fa-ellipsis"></i></h4>
-
-                </dic>
-
-
-                <div class="p-auto card-img"
-                    style="background-color: #FFE2B7; width: auto; height:auto; border-radius: 1rem;">
-
-                    <img src="images/items/Almond-Milk.png" class="card-img-top" alt="...">
+                    <button class="btn-popover ms-2 mb-2" data-bs-container="body" data-bs-toggle="popover"
+                        data-bs-placement="bottom" data-bs-content="Bottom popover"><i
+                            class="fa-solid fa-ellipsis fa-2x"></i></button>
 
                 </div>
 
 
+                <div class="p-2 card-img col-12"
+                    style="background-color: #FFE2E2; width: auto; height:auto; border-radius: 1rem;">
 
-                <div class="card-body justify-content-start mxauto">
+                    <img src="images/items/orange.png" class="card-img-top" alt="...">
 
-                    <h5 class="card-title" style="font-weight: bold;">Orange(1 KG)</h5>
+                </div>
+
+                <div class="card-body text-start me-4 col-12">
+
+                    <h5 class="card-title" style="font-weight: bold;">Orange (1 KG)</h5>
                     <p class="card-text">Fruit</p>
 
                 </div>
@@ -386,22 +243,270 @@
 
             </div>
 
-        </div>
+            <div class="m-2 p-2 card">
 
-        <!--Pagination for recenty bought items-->
-        <div class="container">
-            <nav aria-label="Page navigation example col-12 col-lg-6 mb-2 p-2 mx-auto">
-                <ul
-                    class="list-group list-group-horizontal my-0 mx-auto justify-content-center align-items-center justify-content-lg-end align-items-lg-end">
-                    <li class="list-group-item"><i class="fa fa-angle-double-left"></i></li>
-                    <li class="list-group-item" style="color: #53B175; font-weight: bold;">1</li>
-                    <li class="list-group-item bg_info text-white">2</li>
-                    <li class="list-group-item" style="color: #53B175; font-weight: bold;">3</li>
-                    <li class="list-group-item" style="color: #53B175; font-weight: bold;">4</li>
-                    <li class="list-group-item"><i class="fa fa-angle-double-right"></i></li>
-                </ul>
-            </nav>
-        </div>
+
+                <div class="col-12 d-flex justify-content-end pe-2">
+
+                    <button class="btn-popover ms-2 mb-2" data-bs-container="body" data-bs-toggle="popover"
+                        data-bs-placement="bottom" data-bs-content="Bottom popover"><i
+                            class="fa-solid fa-ellipsis fa-2x"></i></button>
+
+                </div>
+
+
+                <div class="p-2 card-img col-12"
+                    style="background-color: #FFE2E2; width: auto; height:auto; border-radius: 1rem;">
+
+                    <img src="images/items/orange.png" class="card-img-top" alt="...">
+
+                </div>
+
+                <div class="card-body text-start me-4 col-12">
+
+                    <h5 class="card-title" style="font-weight: bold;">Orange (1 KG)</h5>
+                    <p class="card-text">Fruit</p>
+
+                </div>
+
+
+            </div>
+
+            <div class="m-2 p-2 card">
+
+
+                <div class="col-12 d-flex justify-content-end pe-2">
+
+                    <button class="btn-popover ms-2 mb-2" data-bs-container="body" data-bs-toggle="popover"
+                        data-bs-placement="bottom" data-bs-content="Bottom popover"><i
+                            class="fa-solid fa-ellipsis fa-2x"></i></button>
+
+                </div>
+
+
+                <div class="p-2 card-img col-12"
+                    style="background-color: #FFE2E2; width: auto; height:auto; border-radius: 1rem;">
+
+                    <img src="images/items/orange.png" class="card-img-top" alt="...">
+
+                </div>
+
+                <div class="card-body text-start me-4 col-12">
+
+                    <h5 class="card-title" style="font-weight: bold;">Orange (1 KG)</h5>
+                    <p class="card-text">Fruit</p>
+
+                </div>
+
+
+            </div>
+
+            <div class="m-2 p-2 card">
+
+
+                <div class="col-12 d-flex justify-content-end pe-2">
+
+                    <button class="btn-popover ms-2 mb-2" data-bs-container="body" data-bs-toggle="popover"
+                        data-bs-placement="bottom" data-bs-content="Bottom popover"><i
+                            class="fa-solid fa-ellipsis fa-2x"></i></button>
+
+                </div>
+
+
+                <div class="p-2 card-img col-12"
+                    style="background-color: #FFE2E2; width: auto; height:auto; border-radius: 1rem;">
+
+                    <img src="images/items/orange.png" class="card-img-top" alt="...">
+
+                </div>
+
+                <div class="card-body text-start me-4 col-12">
+
+                    <h5 class="card-title" style="font-weight: bold;">Orange (1 KG)</h5>
+                    <p class="card-text">Fruit</p>
+
+                </div>
+
+
+            </div>
+
+            <div class="m-2 p-2 card">
+
+
+                <div class="col-12 d-flex justify-content-end pe-2">
+
+                    <button class="btn-popover ms-2 mb-2" data-bs-container="body" data-bs-toggle="popover"
+                        data-bs-placement="bottom" data-bs-content="Bottom popover"><i
+                            class="fa-solid fa-ellipsis fa-2x"></i></button>
+
+                </div>
+
+
+                <div class="p-2 card-img col-12"
+                    style="background-color: #FFE2E2; width: auto; height:auto; border-radius: 1rem;">
+
+                    <img src="images/items/orange.png" class="card-img-top" alt="...">
+
+                </div>
+
+                <div class="card-body text-start me-4 col-12">
+
+                    <h5 class="card-title" style="font-weight: bold;">Orange (1 KG)</h5>
+                    <p class="card-text">Fruit</p>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+        <!--Cards List-->
+
+        <section class="container scroll d-flex flex-wrap align-items-center justify-content-center p-4 my-4 mx-auto">
+
+
+            <div class="row col-12 bg-white shadow p-3 rounded-3 justify-content-start align-items-center mx-auto my-2">
+
+                <div class="row col-12 mb-2 mx-auto align-items-center">
+
+                    <div class="col-8">
+                        <a href="">
+                            <h7 class="fw-bold text-success d-flex justify-content-start">Sharma Confectionaries
+                            </h7>
+                        </a>
+                    </div>
+                    <div class="col-4 d-flex justify-content-end">
+                        <button href="" class="btn-popover" data-bs-container="body" data-bs-toggle="popover"
+                            data-bs-placement="bottom" data-bs-content="Bottom popover">
+                            <i class="fa-solid fa-ellipsis fa-2x "></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="row col-12 align-items-center mx-auto">
+                    <div class="col-4">
+                        <a href="#">
+                            <img src="images/items/orange.png" alt="" width="72px" height="auto"
+                                class="p-2 shadow-sm rounded-2" style="background-color: #FFE2E2;">
+                        </a>
+                    </div>
+                    <div class="col-8 ">
+                        <h5 class="fw-bold text-start">Orange (1KG)</h5>
+                        <h8 class="fw-regular text-start">Vegetable</h8>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row col-12 bg-white shadow p-3 rounded-3 justify-content-start align-items-center mx-auto my-2">
+
+                <div class="row col-12 mb-2 mx-auto align-items-center">
+
+                    <div class="col-8">
+                        <a href="">
+                            <h7 class="fw-bold text-success d-flex justify-content-start">Sharma Confectionaries
+                            </h7>
+                        </a>
+                    </div>
+                    <div class="col-4 d-flex justify-content-end">
+                        <button href="" class="btn-popover" data-bs-container="body" data-bs-toggle="popover"
+                            data-bs-placement="bottom" data-bs-content="Bottom popover">
+                            <i class="fa-solid fa-ellipsis fa-2x "></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="row col-12 align-items-center mx-auto">
+                    <div class="col-4">
+                        <a href="#">
+                            <img src="images/items/orange.png" alt="" width="72px" height="auto"
+                                class="p-2 shadow-sm rounded-2" style="background-color: #FFE2E2;">
+                        </a>
+                    </div>
+                    <div class="col-8 ">
+                        <h5 class="fw-bold text-start">Orange (1KG)</h5>
+                        <h8 class="fw-regular text-start">Vegetable</h8>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row col-12 bg-white shadow p-3 rounded-3 justify-content-start align-items-center mx-auto my-2">
+
+                <div class="row col-12 mb-2 mx-auto align-items-center">
+
+                    <div class="col-8">
+                        <a href="">
+                            <h7 class="fw-bold text-success d-flex justify-content-start">Sharma Confectionaries
+                            </h7>
+                        </a>
+                    </div>
+                    <div class="col-4 d-flex justify-content-end">
+                        <button href="" class="btn-popover" data-bs-container="body" data-bs-toggle="popover"
+                            data-bs-placement="bottom" data-bs-content="Bottom popover">
+                            <i class="fa-solid fa-ellipsis fa-2x "></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="row col-12 align-items-center mx-auto">
+                    <div class="col-4">
+                        <a href="#">
+                            <img src="images/items/orange.png" alt="" width="72px" height="auto"
+                                class="p-2 shadow-sm rounded-2" style="background-color: #FFE2E2;">
+                        </a>
+                    </div>
+                    <div class="col-8 ">
+                        <h5 class="fw-bold text-start">Orange (1KG)</h5>
+                        <h8 class="fw-regular text-start">Vegetable</h8>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row col-12 bg-white shadow p-3 rounded-3 justify-content-start align-items-center mx-auto my-2">
+
+                <div class="row col-12 mb-2 mx-auto align-items-center">
+
+                    <div class="col-8">
+                        <a href="">
+                            <h7 class="fw-bold text-success d-flex justify-content-start">Sharma Confectionaries
+                            </h7>
+                        </a>
+                    </div>
+                    <div class="col-4 d-flex justify-content-end">
+                        <button href="" class="btn-popover" data-bs-container="body" data-bs-toggle="popover"
+                            data-bs-placement="bottom" data-bs-content="Bottom popover">
+                            <i class="fa-solid fa-ellipsis fa-2x "></i>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div class="row col-12 align-items-center mx-auto">
+                    <div class="col-4">
+                        <a href="#">
+                            <img src="images/items/orange.png" alt="" width="72px" height="auto"
+                                class="p-2 shadow-sm rounded-2" style="background-color: #FFE2E2;">
+                        </a>
+                    </div>
+                    <div class="col-8 ">
+                        <h5 class="fw-bold text-start">Orange (1KG)</h5>
+                        <h8 class="fw-regular text-start">Vegetable</h8>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+        </section>
 
 
     </main>
