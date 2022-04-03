@@ -81,9 +81,6 @@
   </nav>
 
   <main class="container p-4">
-
-
-
     <section class="clearfix"></section>
 
     <br><br>
@@ -91,7 +88,7 @@
     <!--Search Bar-->
     <section class="container my-4">
       <form action="">
-        <div class="p-1 bg-white rounded rounded-pill shadow-sm mb-4 border border-success col-12">
+        <div class="p-2 bg-white rounded rounded-pill shadow-sm mb-4 border border-success col-12">
           <div class="input-group">
             <div class="input-group-prepend">
               <button id="button-addon2" type="submit" class="mx-2 p-2 bg-white border-0 text-black"><i
@@ -105,470 +102,529 @@
     </section>
 
     <!--Carousel-->
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
+    <section class="p-2">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/carousel_1.jpg" class="d-block w-100 img-fluid" alt="carousel-1">
+            <div class="carousel-caption d-none d-md-none d-lg-block rounded-4">
+              <h5 class="fw-bold text-white my-2">First slide label</h5>
+              <p class="fw-regular my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur non hic
+                blanditiis
+                a ut? Voluptatem nostrum molestias deleniti, consequatur incidunt quaerat sit voluptas omnis possimus,
+                ullam ducimus architecto harum molestiae?</p>
+              <button class="btn">Check Now</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/carousel_2.jpg" class="d-block w-100 img-fluid" alt="carousel-2">
+            <div class="carousel-caption d-none d-md-none d-lg-block">
+              <h5 class="fw-bold text-white my-2">First slide label</h5>
+              <p class="fw-regular my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur non hic
+                blanditiis
+                a ut? Voluptatem nostrum molestias deleniti, consequatur incidunt quaerat sit voluptas omnis possimus,
+                ullam ducimus architecto harum molestiae?</p>
+              <button class="btn">Check Now</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/carousel_3.jpg" class="d-block w-100 img-fluid" alt="carousel-3">
+            <div class="carousel-caption d-none d-md-none d-lg-block">
+              <h5 class="fw-bold text-white my-2">First slide label</h5>
+              <p class="fw-regular my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur non hic
+                blanditiis
+                a ut? Voluptatem nostrum molestias deleniti, consequatur incidunt quaerat sit voluptas omnis possimus,
+                ullam ducimus architecto harum molestiae?</p>
+              <button class="btn">Check Now</button>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="images/carousel_1.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="images/carousel_2.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="images/carousel_3.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    <!--Navs-->
-    <section class="container">
-
-      <ul class="nav justify-content-center justify-content-around  align-items-center col-12 my-4 mx-auto">
-        <li class="nav-item">
-          <a class="nav-link active fw-bold" href="#" style="color: #53B175;">All</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fw-normal" href="#" style="color: #829187;">Fruit</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fw-normal" href="#" style="color: #829187;">Vegetable</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fw-normal" style="color: #829187;">Meat</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fw-normal" style="color: #829187;">Dairy</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link fw-normal" style="color: #829187;">Beverages</a>
-        </li>
-      </ul>
-
     </section>
 
-    <!--Cards-->
-    <section class="container d-flex flex-wrap align-items-center justify-content-center p-2 my-2 mx-auto">
-
-      <div class="m-2 card p-2">
-
-        <div class="row col-12  justify-content-center align-items-center my-2 mx-auto">
-
-          <div class="col-8 text-start">
-            <a href="">
-              <h3 style="color: #53B175;" class="fw-bold fs-6">Sharma Confec...</h3>
-            </a>
-          </div>
-          <div class="col-4 text-end">
-            <a class=""><img src="images/icons/heart.svg" id="iconImage" width="32px" height="auto" alt="">
-            </a>
-          </div>
-
-        </div>
-
-        <div class="row mt-2 mx-auto">
-          <a href="product.html"><img src="images/items/orange.png" class="card-img" alt="..."></a>
-        </div>
-
-        <div class="card-body col-12 col-lg-12 text-lg-start text-start mx-auto">
-
-          <h5 class="card-title fw-bold">Almond Milk(1L)</h5>
-          <p class="card-text">Dairy</p>
-
-        </div>
-
-        <!-- <p class="card-text mt-3 mb-3">Fruit</p> -->
-
-        <div class="row card_footer justify-content-center align-items-center  col-12 mx-auto p-2">
-
-          <div class="col-6 text-start">
-            <h4 class="card-title fw-bold">$7.99
-            </h4>
-          </div>
-          <div class="col-6 text-end">
-            <a href=""><img src="images/icons/add_item.svg" alt="" srcset=""></a>
-            </h4>
-          </div>
-
-        </div>
-
-
-      </div>
-
-
-      <div class="m-2 card p-2">
-
-        <div class="row col-12 justify-content-center align-items-center my-2 mx-auto">
-
-          <div class="col-8 text-start">
-            <a href="">
-              <h3 style="color: #53B175;" class="fw-bold fs-6">Sharma Confec...</h3>
-            </a>
-          </div>
-          <div class="col-4 text-end">
-            <a class=""><img src="images/icons/heart.svg" id="iconImage" width="32px" height="auto" alt="">
-            </a>
-          </div>
-
-        </div>
-
-        <div class="row mt-2 mx-auto">
-          <a href="product.html"><img src="images/items/Cauliflower.png" class="card-img" alt="..."></a>
-        </div>
-
-        <div class="card-body col-12 col-lg-12 text-lg-start text-start mx-auto">
-
-          <h5 class="card-title fw-bold">Cauliflower(2.5 KG)</h5>
-          <p class="card-text">Vegetable</p>
-
-        </div>
-
-        <!-- <p class="card-text mt-3 mb-3">Fruit</p> -->
-
-        <div class="row card_footer justify-content-center align-items-center  col-12 mx-auto p-2">
-
-          <div class="col-6 text-start">
-            <h4 class="card-title fw-bold">$7.99
-            </h4>
-          </div>
-          <div class="col-6 text-end">
-            <a href=""><img src="images/icons/add_item.svg" alt="" srcset=""></a>
-            </h4>
-          </div>
-
-        </div>
-
-
-      </div>
-
-
-      <div class="m-2 card p-2">
-
-        <div class="row col-12 justify-content-center align-items-center my-2 mx-auto">
-
-          <div class="col-8 text-start">
-            <a href="">
-              <h3 style="color: #53B175;" class="fw-bold fs-6">Sharma Confec...</h3>
-            </a>
-          </div>
-          <div class="col-4 text-end">
-            <a class=""><img src="images/icons/heart.svg" id="iconImage" width="32px" height="auto" alt="">
-            </a>
-          </div>
-
-        </div>
-
-        <div class="row mt-2 mx-auto">
-          <a href="product.html"><img src="images/items/Chicken.png" class="card-img" alt="..."></a>
-        </div>
-
-        <div class="card-body col-12 col-lg-12 text-lg-start text-start mx-auto">
-
-          <h5 class="card-title fw-bold">Chicken(1kG)</h5>
-          <p class="card-text">Non-Veg</p>
-
-        </div>
-
-        <!-- <p class="card-text mt-3 mb-3">Fruit</p> -->
-
-        <div class="row card_footer justify-content-center align-items-center  col-12 mx-auto p-2">
-
-          <div class="col-6 text-start">
-            <h4 class="card-title fw-bold">$7.99
-            </h4>
-          </div>
-          <div class="col-6 text-end">
-            <a href=""><img src="images/icons/add_item.svg" alt="" srcset=""></a>
-            </h4>
-          </div>
-
-        </div>
-
-
-      </div>
-
-
-      <div class="m-2 card p-2">
-
-        <div class="row col-12 justify-content-center align-items-center mx-auto my-2">
-
-          <div class="col-8 text-start">
-            <a href="">
-              <h3 style="color: #53B175;" class="fw-bold fs-6">Sharma Confec...</h3>
-            </a>
-          </div>
-          <div class="col-4 text-end">
-            <a class=""><img src="images/icons/heart.svg" id="iconImage" width="32px" height="auto" alt="">
-            </a>
-          </div>
-
-        </div>
-
-        <div class="row mt-2 mx-auto">
-          <a href="product.html"><img src="images/items/Almond-Milk.png" class="card-img" alt="..."></a>
-        </div>
-
-        <div class="card-body col-12 col-lg-12 text-lg-start text-start mx-auto">
-
-          <h5 class="card-title fw-bold">Almond Milk(1L)</h5>
-          <p class="card-text">Dairy</p>
-
-        </div>
-
-        <!-- <p class="card-text mt-3 mb-3">Fruit</p> -->
-
-        <div class="row card_footer justify-content-center align-items-center  col-12 mx-auto p-2">
-
-          <div class="col-6 text-start">
-            <h4 class="card-title fw-bold">$7.99
-            </h4>
-          </div>
-          <div class="col-6 text-end">
-            <a href=""><img src="images/icons/add_item.svg" alt="" srcset=""></a>
-            </h4>
-          </div>
-
-        </div>
-
-
-      </div>
-
-      <div class="m-2 card p-2">
-
-        <div class="row col-12 justify-content-center align-items-center mx-auto my-2">
-
-          <div class="col-8 text-start">
-            <a href="">
-              <h3 style="color: #53B175;" class="fw-bold fs-6">Sharma Confec...</h3>
-            </a>
-          </div>
-          <div class="col-4 text-end">
-            <a class=""><img src="images/icons/heart.svg" id="iconImage" width="32px" height="auto" alt="">
-            </a>
-          </div>
-
-        </div>
-
-        <div class="row mt-2 mx-auto">
-          <a href="product.html"><img src="images/items/Almond-Milk.png" class="card-img" alt="..."></a>
-        </div>
-
-        <div class="card-body col-12 col-lg-12 text-lg-start text-start mx-auto">
-
-          <h5 class="card-title fw-bold">Almond Milk(1L)</h5>
-          <p class="card-text">Dairy</p>
-
-        </div>
-
-        <!-- <p class="card-text mt-3 mb-3">Fruit</p> -->
-
-        <div class="row card_footer justify-content-center align-items-center  col-12 mx-auto p-2">
-
-          <div class="col-6 text-start">
-            <h4 class="card-title fw-bold">$7.99
-            </h4>
-          </div>
-          <div class="col-6 text-end">
-            <a href=""><img src="images/icons/add_item.svg" alt="" srcset=""></a>
-            </h4>
-          </div>
-
-        </div>
-
-
-      </div>
-
-      <div class="m-2 card p-2">
-
-        <div class="row col-12 justify-content-center align-items-center mx-auto my-2">
-
-          <div class="col-8 text-start">
-            <a href="">
-              <h3 style="color: #53B175;" class="fw-bold fs-6">Sharma Confec...</h3>
-            </a>
-          </div>
-          <div class="col-4 text-end">
-            <a class=""><img src="images/icons/heart.svg" id="iconImage" width="32px" height="auto" alt="">
-            </a>
-          </div>
-
-        </div>
-
-        <div class="row mt-2 mx-auto">
-          <a href="product.html"><img src="images/items/Almond-Milk.png" class="card-img" alt="..."></a>
-        </div>
-
-        <div class="card-body col-12 col-lg-12 text-lg-start text-start mx-auto">
-
-          <h5 class="card-title fw-bold">Almond Milk(1L)</h5>
-          <p class="card-text">Dairy</p>
-
-        </div>
-
-        <!-- <p class="card-text mt-3 mb-3">Fruit</p> -->
-
-        <div class="row card_footer justify-content-center align-items-center  col-12 mx-auto p-2">
-
-          <div class="col-6 text-start">
-            <h4 class="card-title fw-bold">$7.99
-            </h4>
-          </div>
-          <div class="col-6 text-end">
-            <a href=""><img src="images/icons/add_item.svg" alt="" srcset=""></a>
-            </h4>
-          </div>
-
-        </div>
-
-
-      </div>
-
-      <div class="m-2 card p-2">
-
-        <div class="row col-12 justify-content-center align-items-center mx-auto my-2">
-
-          <div class="col-8 text-start">
-            <a href="">
-              <h3 style="color: #53B175;" class="fw-bold fs-6">Sharma Confec...</h3>
-            </a>
-          </div>
-          <div class="col-4 text-end">
-            <a class=""><img src="images/icons/heart.svg" id="iconImage" width="32px" height="auto" alt="">
-            </a>
-          </div>
-
-        </div>
-
-        <div class="row mt-2 mx-auto">
-          <a href="product.html"><img src="images/items/Almond-Milk.png" class="card-img" alt="..."></a>
-        </div>
-
-        <div class="card-body col-12 col-lg-12 text-lg-start text-start mx-auto">
-
-          <h5 class="card-title fw-bold">Almond Milk(1L)</h5>
-          <p class="card-text">Dairy</p>
-
-        </div>
-
-        <!-- <p class="card-text mt-3 mb-3">Fruit</p> -->
-
-        <div class="row card_footer justify-content-center align-items-center  col-12 mx-auto p-2">
-
-          <div class="col-6 text-start">
-            <h4 class="card-title fw-bold">$7.99
-            </h4>
-          </div>
-          <div class="col-6 text-end">
-            <a href=""><img src="images/icons/add_item.svg" alt="" srcset=""></a>
-            </h4>
-          </div>
-
-        </div>
-
-
-      </div>
-
-      <div class="m-2 card p-2">
-
-        <div class="row col-12 justify-content-center align-items-center mx-auto my-2">
-
-          <div class="col-8 text-start">
-            <a href="">
-              <h3 style="color: #53B175;" class="fw-bold fs-6">Sharma Confec...</h3>
-            </a>
-          </div>
-          <div class="col-4 text-end">
-            <a class=""><img src="images/icons/heart.svg" id="iconImage" width="32px" height="auto" alt="">
-            </a>
-          </div>
-
-        </div>
-
-        <div class="row mt-2 mx-auto">
-          <a href="product.html"><img src="images/items/Almond-Milk.png" class="card-img" alt="..."></a>
-        </div>
-
-        <div class="card-body col-12 col-lg-12 text-lg-start text-start mx-auto">
-
-          <h5 class="card-title fw-bold">Almond Milk(1L)</h5>
-          <p class="card-text">Dairy</p>
-
-        </div>
-
-        <!-- <p class="card-text mt-3 mb-3">Fruit</p> -->
-
-        <div class="row card_footer justify-content-center align-items-center  col-12 mx-auto p-2">
-
-          <div class="col-6 text-start">
-            <h4 class="card-title fw-bold">$7.99
-            </h4>
-          </div>
-          <div class="col-6 text-end">
-            <a href=""><img src="images/icons/add_item.svg" alt="" srcset=""></a>
-            </h4>
-          </div>
-
-        </div>
-
-
-      </div>
-
-
-    </section>
-
-
-    <!--Pagination-->
-
-    <section class="container">
-      <nav aria-label="Page navigation example col-12 col-lg-6 mb-2 p-2">
-        <ul
-          class="list-group list-group-horizontal my-2 justify-content-center align-items-center justify-content-lg-end align-items-lg-end">
-          <li class="list-group-item"><i class="fa fa-angle-double-left"></i></li>
-          <li class="list-group-item" style="color: #53B175; font-weight: bold;">1</li>
-          <li class="list-group-item bg_info text-white">2</li>
-          <li class="list-group-item" style="color: #53B175; font-weight: bold;">3</li>
-          <li class="list-group-item" style="color: #53B175; font-weight: bold;">4</li>
-          <li class="list-group-item"><i class="fa fa-angle-double-right"></i></li>
+    <section class="container bg-white p-2 shadow-sm">
+
+      <!--Navs-->
+      <section class="scroll-container">
+
+        <ul class="nav text-nowrap flex-nowrap  mx-auto p-4"
+          style="overflow-x:auto; -webkit-overflow-scrolling: touch;">
+          <li class="nav-item">
+            <a class="nav-link active fw-bold" href="#" style="color: #53B175;">All</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-normal" href="#" style="color: #829187;">Fruit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-normal" href="#" style="color: #829187;">Vegetable</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-normal" style="color: #829187;">Meat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-normal" style="color: #829187;">Dairy</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-normal" style="color: #829187;">Beverages</a>
+          </li>
         </ul>
-      </nav>
+
+      </section>
+
+      <!--Cards-->
+      <section class="container p-4">
+
+        <section class="scroll-container p-2 my-2 mx-auto">
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          <div class="m-2 card p-2">
+            <div class="row col-12  justify-content-center align-items-center my-2 mx-auto">
+              <div class="col-8 text-start">
+                <a href="">
+                  <h3 style="color: #53B175;" class="fw-bold fs-6">Sharma Confec...</h3>
+                </a>
+              </div>
+              <div class="col-4 text-end">
+                <a class=""><img src="images/icons/heart.svg" id="iconImage" width="32px" height="auto" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="row mt-2 mx-auto">
+              <a href="product.html"><img src="images/items/orange.png" class="card-img" alt="..."></a>
+            </div>
+            <div class="card-body col-12 col-lg-12 text-lg-start text-start mx-auto">
+              <h5 class="card-title fw-bold">Almond Milk(1L)</h5>
+              <p class="card-text">Dairy</p>
+            </div>
+            <!-- <p class="card-text mt-3 mb-3">Fruit</p> -->
+            <div class="row card_footer justify-content-center align-items-center  col-12 mx-auto p-2">
+              <div class="col-6 text-start">
+                <h4 class="card-title fw-bold">$7.99
+                </h4>
+              </div>
+              <div class="col-6 text-end">
+                <a href=""><img src="images/icons/add_item.svg" alt="" srcset=""></a>
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="m-2 card p-2">
+            <div class="row col-12 justify-content-center align-items-center my-2 mx-auto">
+              <div class="col-8 text-start">
+                <a href="">
+                  <h3 style="color: #53B175;" class="fw-bold fs-6">Sharma Confec...</h3>
+                </a>
+              </div>
+              <div class="col-4 text-end">
+                <a class=""><img src="images/icons/heart.svg" id="iconImage" width="32px" height="auto" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="row mt-2 mx-auto">
+              <a href="product.html"><img src="images/items/Cauliflower.png" class="card-img" alt="..."></a>
+            </div>
+            <div class="card-body col-12 col-lg-12 text-lg-start text-start mx-auto">
+              <h5 class="card-title fw-bold">Cauliflower(2.5 KG)</h5>
+              <p class="card-text">Vegetable</p>
+            </div>
+            <!-- <p class="card-text mt-3 mb-3">Fruit</p> -->
+            <div class="row card_footer justify-content-center align-items-center  col-12 mx-auto p-2">
+              <div class="col-6 text-start">
+                <h4 class="card-title fw-bold">$7.99
+                </h4>
+              </div>
+              <div class="col-6 text-end">
+                <a href=""><img src="images/icons/add_item.svg" alt="" srcset=""></a>
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="m-2 card p-2">
+            <div class="row col-12 justify-content-center align-items-center my-2 mx-auto">
+              <div class="col-8 text-start">
+                <a href="">
+                  <h3 style="color: #53B175;" class="fw-bold fs-6">Sharma Confec...</h3>
+                </a>
+              </div>
+              <div class="col-4 text-end">
+                <a class=""><img src="images/icons/heart.svg" id="iconImage" width="32px" height="auto" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="row mt-2 mx-auto">
+              <a href="product.html"><img src="images/items/Chicken.png" class="card-img" alt="..."></a>
+            </div>
+            <div class="card-body col-12 col-lg-12 text-lg-start text-start mx-auto">
+              <h5 class="card-title fw-bold">Chicken(1kG)</h5>
+              <p class="card-text">Non-Veg</p>
+            </div>
+            <!-- <p class="card-text mt-3 mb-3">Fruit</p> -->
+            <div class="row card_footer justify-content-center align-items-center  col-12 mx-auto p-2">
+              <div class="col-6 text-start">
+                <h4 class="card-title fw-bold">$7.99
+                </h4>
+              </div>
+              <div class="col-6 text-end">
+                <a href=""><img src="images/icons/add_item.svg" alt="" srcset=""></a>
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="m-2 card p-2">
+            <div class="row col-12 justify-content-center align-items-center mx-auto my-2">
+              <div class="col-8 text-start">
+                <a href="">
+                  <h3 style="color: #53B175;" class="fw-bold fs-6">Sharma Confec...</h3>
+                </a>
+              </div>
+              <div class="col-4 text-end">
+                <a class=""><img src="images/icons/heart.svg" id="iconImage" width="32px" height="auto" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="row mt-2 mx-auto">
+              <a href="product.html"><img src="images/items/Almond-Milk.png" class="card-img" alt="..."></a>
+            </div>
+            <div class="card-body col-12 col-lg-12 text-lg-start text-start mx-auto">
+              <h5 class="card-title fw-bold">Almond Milk(1L)</h5>
+              <p class="card-text">Dairy</p>
+            </div>
+            <!-- <p class="card-text mt-3 mb-3">Fruit</p> -->
+            <div class="row card_footer justify-content-center align-items-center  col-12 mx-auto p-2">
+              <div class="col-6 text-start">
+                <h4 class="card-title fw-bold">$7.99
+                </h4>
+              </div>
+              <div class="col-6 text-end">
+                <a href=""><img src="images/icons/add_item.svg" alt="" srcset=""></a>
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="m-2 card p-2">
+            <div class="row col-12 justify-content-center align-items-center mx-auto my-2">
+              <div class="col-8 text-start">
+                <a href="">
+                  <h3 style="color: #53B175;" class="fw-bold fs-6">Sharma Confec...</h3>
+                </a>
+              </div>
+              <div class="col-4 text-end">
+                <a class=""><img src="images/icons/heart.svg" id="iconImage" width="32px" height="auto" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="row mt-2 mx-auto">
+              <a href="product.html"><img src="images/items/Almond-Milk.png" class="card-img" alt="..."></a>
+            </div>
+            <div class="card-body col-12 col-lg-12 text-lg-start text-start mx-auto">
+              <h5 class="card-title fw-bold">Almond Milk(1L)</h5>
+              <p class="card-text">Dairy</p>
+            </div>
+            <!-- <p class="card-text mt-3 mb-3">Fruit</p> -->
+            <div class="row card_footer justify-content-center align-items-center  col-12 mx-auto p-2">
+              <div class="col-6 text-start">
+                <h4 class="card-title fw-bold">$7.99
+                </h4>
+              </div>
+              <div class="col-6 text-end">
+                <a href=""><img src="images/icons/add_item.svg" alt="" srcset=""></a>
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="m-2 card p-2">
+            <div class="row col-12 justify-content-center align-items-center mx-auto my-2">
+              <div class="col-8 text-start">
+                <a href="">
+                  <h3 style="color: #53B175;" class="fw-bold fs-6">Sharma Confec...</h3>
+                </a>
+              </div>
+              <div class="col-4 text-end">
+                <a class=""><img src="images/icons/heart.svg" id="iconImage" width="32px" height="auto" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="row mt-2 mx-auto">
+              <a href="product.html"><img src="images/items/Almond-Milk.png" class="card-img" alt="..."></a>
+            </div>
+            <div class="card-body col-12 col-lg-12 text-lg-start text-start mx-auto">
+              <h5 class="card-title fw-bold">Almond Milk(1L)</h5>
+              <p class="card-text">Dairy</p>
+            </div>
+            <!-- <p class="card-text mt-3 mb-3">Fruit</p> -->
+            <div class="row card_footer justify-content-center align-items-center  col-12 mx-auto p-2">
+              <div class="col-6 text-start">
+                <h4 class="card-title fw-bold">$7.99
+                </h4>
+              </div>
+              <div class="col-6 text-end">
+                <a href=""><img src="images/icons/add_item.svg" alt="" srcset=""></a>
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="m-2 card p-2">
+            <div class="row col-12 justify-content-center align-items-center mx-auto my-2">
+              <div class="col-8 text-start">
+                <a href="">
+                  <h3 style="color: #53B175;" class="fw-bold fs-6">Sharma Confec...</h3>
+                </a>
+              </div>
+              <div class="col-4 text-end">
+                <a class=""><img src="images/icons/heart.svg" id="iconImage" width="32px" height="auto" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="row mt-2 mx-auto">
+              <a href="product.html"><img src="images/items/Almond-Milk.png" class="card-img" alt="..."></a>
+            </div>
+            <div class="card-body col-12 col-lg-12 text-lg-start text-start mx-auto">
+              <h5 class="card-title fw-bold">Almond Milk(1L)</h5>
+              <p class="card-text">Dairy</p>
+            </div>
+            <!-- <p class="card-text mt-3 mb-3">Fruit</p> -->
+            <div class="row card_footer justify-content-center align-items-center  col-12 mx-auto p-2">
+              <div class="col-6 text-start">
+                <h4 class="card-title fw-bold">$7.99
+                </h4>
+              </div>
+              <div class="col-6 text-end">
+                <a href=""><img src="images/icons/add_item.svg" alt="" srcset=""></a>
+                </h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="m-2 card p-2">
+            <div class="row col-12 justify-content-center align-items-center mx-auto my-2">
+              <div class="col-8 text-start">
+                <a href="">
+                  <h3 style="color: #53B175;" class="fw-bold fs-6">Sharma Confec...</h3>
+                </a>
+              </div>
+              <div class="col-4 text-end">
+                <a class=""><img src="images/icons/heart.svg" id="iconImage" width="32px" height="auto" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="row mt-2 mx-auto">
+              <a href="product.html"><img src="images/items/Almond-Milk.png" class="card-img" alt="..."></a>
+            </div>
+            <div class="card-body col-12 col-lg-12 text-lg-start text-start mx-auto">
+              <h5 class="card-title fw-bold">Almond Milk(1L)</h5>
+              <p class="card-text">Dairy</p>
+            </div>
+            <!-- <p class="card-text mt-3 mb-3">Fruit</p> -->
+            <div class="row card_footer justify-content-center align-items-center  col-12 mx-auto p-2">
+              <div class="col-6 text-start">
+                <h4 class="card-title fw-bold">$7.99
+                </h4>
+              </div>
+              <div class="col-6 text-end">
+                <a href=""><img src="images/icons/add_item.svg" alt="" srcset=""></a>
+                </h4>
+              </div>
+            </div>
+          </div>
+
+
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+        </section>
+
+        <!--Pagination-->
+
+        <!-- <section class="container">
+          <nav aria-label="Page navigation example col-12 col-lg-6 mb-2 p-2">
+            <ul
+              class="list-group list-group-horizontal my-2 justify-content-center align-items-center justify-content-lg-end align-items-lg-end">
+              <li class="list-group-item"><i class="fa fa-angle-double-left"></i></li>
+              <li class="list-group-item" style="color: #53B175; font-weight: bold;">1</li>
+              <li class="list-group-item bg_info text-white">2</li>
+              <li class="list-group-item" style="color: #53B175; font-weight: bold;">3</li>
+              <li class="list-group-item" style="color: #53B175; font-weight: bold;">4</li>
+              <li class="list-group-item"><i class="fa fa-angle-double-right"></i></li>
+            </ul>
+          </nav>
+        </section> -->
+
+
+      </section>
+
     </section>
+
+
 
     <!--Card for recenty bought items-->
 
-    <section class="container">
+    <section class="container my-4 bg-white shadow-sm p-4">
 
-      <h4 class="my-4 col-12 col-lg-6 text-center text-lg-start fw-bold">Recently bought
+      <h4 class="col-12 col-lg-6 text-center text-md-start text-lg-start fw-bold p-2">Recently bought
         by
         you</h4>
 
-      <section class="d-flex flex-wrap align-items-center justify-content-center p-2 mt-2 my-2">
+      <section class="scroll-container p-2 my-2">
+
+        <div class="card p-2 m-2" style="width: 15rem;">
+
+          <div class="row justify-content-center align-items-center mb-2 pt-4">
+
+            <div class="rounded-3 p-3" style="background-color: #FFE2E2; width: auto; height:auto;">
+              <div class="row mt-2 mb-2 mx-auto">
+                <img src="images/items/orange.png" class="card-img" alt="...">
+              </div>
+            </div>
+
+            <div class="card-body mt-2">
+
+              <div class="row justify-content-center align-items-center mx-auto">
+
+                <div class="text-start">
+
+                  <h5 class="card-title" style="font-weight: bold;">Card title</h5>
+                  <p class="card-text">Fruit</p>
+
+                </div>
+                <div class="text-end mt-2">
+                  <h4 style="color: #53B175;" class="fw-bold">$4.99</h4>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="card p-2 m-2" style="width: 15rem;">
+
+          <div class="row justify-content-center align-items-center mb-2 pt-4">
+
+            <div class="rounded-3 p-3" style="background-color: #DEFFF1; width: auto; height:auto;">
+              <div class="row mt-2 mb-2 mx-auto">
+                <img src="images/items/Cauliflower.png" class="card-img" alt="...">
+              </div>
+            </div>
+
+            <div class="card-body mt-2">
+
+              <div class="row justify-content-center align-items-center mx-auto">
+
+                <div class="text-start">
+
+                  <h5 class="card-title" style="font-weight: bold;">Card title</h5>
+                  <p class="card-text">Fruit</p>
+
+                </div>
+                <div class="text-end mt-2">
+                  <h4 style="color: #53B175;" class="fw-bold">$4.99</h4>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="card p-2 m-2" style="width: 15rem;">
+
+          <div class="row justify-content-center align-items-center mb-2 pt-4">
+
+            <div class="rounded-3 p-3" style="background-color: #DDF5FF; width: auto; height:auto;">
+              <div class="row mt-2 mb-2 mx-auto">
+                <img src="images/items/Chicken.png" class="card-img" alt="...">
+              </div>
+            </div>
+
+            <div class="card-body mt-2">
+
+              <div class="row justify-content-center align-items-center mx-auto">
+
+                <div class="text-start">
+
+                  <h5 class="card-title" style="font-weight: bold;">Card title</h5>
+                  <p class="card-text">Fruit</p>
+
+                </div>
+                <div class="text-end mt-2">
+                  <h4 style="color: #53B175;" class="fw-bold">$4.99</h4>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="card p-2 m-2" style="width: 15rem;">
+
+          <div class="row justify-content-center align-items-center mb-2 pt-4">
+
+            <div class="rounded-3 p-3" style="background-color: #FFE2B7; width: auto; height:auto;">
+              <div class="row mt-2 mb-2 mx-auto">
+                <img src="images/items/Almond-Milk.png" class="card-img" alt="...">
+              </div>
+            </div>
+
+            <div class="card-body mt-2">
+
+              <div class="row justify-content-center align-items-center mx-auto">
+
+                <div class="text-start">
+
+                  <h5 class="card-title" style="font-weight: bold;">Card title</h5>
+                  <p class="card-text">Fruit</p>
+
+                </div>
+                <div class="text-end mt-2">
+                  <h4 style="color: #53B175;" class="fw-bold">$4.99</h4>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
 
         <div class="card p-2 m-2" style="width: 15rem;">
 
@@ -700,23 +756,27 @@
 
       </section>
 
+
+
+      <!--Pagination for recenty bought items-->
+
+      <!-- <section class="container">
+        <nav aria-label="Page navigation example col-12 col-lg-6 mb-2 p-2">
+          <ul
+            class="list-group list-group-horizontal mt-2 mb-2 justify-content-center align-items-center justify-content-lg-end align-items-lg-end">
+            <li class="list-group-item"><i class="fa fa-angle-double-left"></i></li>
+            <li class="list-group-item" style="color: #53B175; font-weight: bold;">1</li>
+            <li class="list-group-item bg_info text-white">2</li>
+            <li class="list-group-item" style="color: #53B175; font-weight: bold;">3</li>
+            <li class="list-group-item" style="color: #53B175; font-weight: bold;">4</li>
+            <li class="list-group-item"><i class="fa fa-angle-double-right"></i></li>
+          </ul>
+        </nav>
+      </section> -->
+
     </section>
 
-    <!--Pagination for recenty bought items-->
 
-    <section class="container">
-      <nav aria-label="Page navigation example col-12 col-lg-6 mb-2 p-2">
-        <ul
-          class="list-group list-group-horizontal mt-2 mb-2 justify-content-center align-items-center justify-content-lg-end align-items-lg-end">
-          <li class="list-group-item"><i class="fa fa-angle-double-left"></i></li>
-          <li class="list-group-item" style="color: #53B175; font-weight: bold;">1</li>
-          <li class="list-group-item bg_info text-white">2</li>
-          <li class="list-group-item" style="color: #53B175; font-weight: bold;">3</li>
-          <li class="list-group-item" style="color: #53B175; font-weight: bold;">4</li>
-          <li class="list-group-item"><i class="fa fa-angle-double-right"></i></li>
-        </ul>
-      </nav>
-    </section>
 
     <!--Banners Jumbotron-->
 
@@ -801,19 +861,25 @@
 
   <!--Footer-->
 
-  <footer class="footer-panel d-none d-lg-block d-md-block mx-auto p-2">
+  <footer class="footer-panel d-sm-none d-lg-block d-md-block">
 
-    <div class="container py-5 my-5">
+    <div class="container p-4 my-5">
 
-      <div class="row py-3">
+      <div class="row p-2 m-2">
+
         <div class="col-lg-4 col-md-6 col-12 mb-lg-0">
-          <h6 class="mb-2"><img src="images/Logo_footer.svg" width="256px" height="auto" alt=""></h6>
-          <p class="text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt suscipit
-            lobortis quis sit sem facilisi. Bibendum cras ut sit massa leo vel scelerisque turpis. Mauris pretium
-            ornare egestas ultricies. Velit rhoncus, bibendum proin fames nulla penatibus facilisis elementum. Est,
-            massa tellus viverra penatibus. Morbi adipiscing lectus nec sagittis lorem. Congue cursus ornare gravida
+          <h6 class="mb-2"><img src="../images/Logo_footer.svg" width="256px" height="auto" alt=""></h6>
+          <p class="text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
+            suscipit
+            lobortis quis sit sem facilisi. Bibendum cras ut sit massa leo vel scelerisque turpis.
+            Mauris pretium
+            ornare egestas ultricies. Velit rhoncus, bibendum proin fames nulla penatibus facilisis
+            elementum. Est,
+            massa tellus viverra penatibus. Morbi adipiscing lectus nec sagittis lorem. Congue cursus
+            ornare gravida
             egestas aenean vel lacus. </p>
-          <p class="text-white mb-4"><span style="font-weight: bold;">Toll Free number:</span> (239) 555-0108</p>
+          <p class="text-white mb-4"><span style="font-weight: bold;">Toll Free number:</span> (239)
+            555-0108</p>
 
           <!-- <ul class="list-inline mt-4">
           <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i
@@ -829,7 +895,7 @@
         </ul> -->
         </div>
         <div class="col-lg-2 col-md-6 mb-4 mt-4 mb-lg-0">
-          <h6 class="text-uppercase fw-bold mb-4">Useful Links</h6>
+          <h6 class="text-uppercase font-weight-bold mb-4">Useful Links</h6>
           <ul class="list-unstyled mb-0">
             <li class="mb-2"><a href="#" class="text-white">Contact Us</a></li>
             <li class="mb-2"><a href="#" class="text-white">About Us</a></li>
@@ -838,7 +904,7 @@
           </ul>
         </div>
         <div class="col-lg-2 col-md-6 mb-4 mt-4 mb-lg-0">
-          <h6 class="text-uppercase fw-bold mb-4">Help</h6>
+          <h6 class="text-uppercase font-weight-bold mb-4">Help</h6>
           <ul class="list-unstyled mb-0">
             <li class="mb-2 footer-color"><a href="#" class="text-white">Payments</a></li>
             <li class="mb-2 footer-color"><a href="#" class="text-white">Shipping</a></li>
@@ -847,7 +913,7 @@
           </ul>
         </div>
         <div class="col-lg-2 col-md-6 mb-4 mt-4 mb-lg-0">
-          <h6 class="text-uppercase fw-bold mb-4">Policy</h6>
+          <h6 class="text-uppercase font-weight-bold mb-4">Policy</h6>
           <ul class="list-unstyled mb-0">
             <li class="mb-2 footer-color"><a href="#" class="text-white">Return Policy</a></li>
             <li class="mb-2 footer-color"><a href="#" class="text-white">Terms Of Use</a></li>
@@ -856,7 +922,7 @@
           </ul>
         </div>
         <div class="col-lg-2 col-md-6 mb-4  mt-4 mb-lg-0">
-          <h6 class="text-uppercase fw-bold mb-4">Company</h6>
+          <h6 class="text-uppercase font-weight-bold mb-4">Company</h6>
           <ul class="list-unstyled mb-0">
             <li class="mb-2 footer-color"><a href="#" class="text-white">Login</a></li>
             <li class="mb-2 footer-color"><a href="#" class="text-white">Register</a></li>
@@ -869,14 +935,16 @@
 
     </div>
 
-    <hr class="p-0 m-0 b-0">
 
     <div class="py-2 mb-8 col-12 col-lg-12">
       <div class="container text-center text-lg-center">
-        <p class="text-white fw-bold mb-10 py-2">&copy; <span>MyMarket 2021. All Rights reserved</span></p>
+        <p class="text-white  font-weight-bold mb-10 py-2">&copy; <span>MyMarket 2021. All Rights reserved</span>
+        </p>
       </div>
     </div>
+
   </footer>
+
 
 
 
