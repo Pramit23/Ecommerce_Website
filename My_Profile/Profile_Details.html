@@ -62,16 +62,19 @@
         <div class="offcanvas-body">
           <div
             class="navbar-nav justify-content-center align-items-center justify-content-lg-end flex-grow-1 px-auto mt-2">
-            <a class="nav-item nav-link active fw-bold fs-6" aria-current="page" href="#">
+            <a class="nav-item nav-link text-black  fw-regular fs-6" aria-current="page" href="#">
               <i class="fas fa-shopping-cart pr-2"></i> My Cart</a>
             <hr class="bg-black">
-            <a class="nav-item nav-link fw-regular text-black fs-6" href="#"><i class="fas fa-heart pr-2"></i>
+            <a class="nav-item nav-link fw-regular text-black fs-6" href="../favorites.html"><i
+                class="fas fa-heart pr-2"></i>
               Favorites</a></a>
             <hr class="bg-black">
-            <a class="nav-item nav-link fw-regular text-black fs-6" href="#"><i class="fas fa-bell pr-2"></i>
+            <a class="nav-item nav-link fw-regular text-black fs-6" href="../notifications.html"><i
+                class="fas fa-bell pr-2"></i>
               Notifications</a>
             <hr class="bg-black">
-            <a class="nav-item nav-link fw-regular text-black fs-6" href="#"><i class="fas fa-user pr-2"></i> My
+            <a class="nav-item nav-link fw-regular text-black fs-6" href="../My_Profile/index.html"><i
+                class="fas fa-user pr-2"></i> My
               Profile</a>
           </div>
         </div>
@@ -88,10 +91,11 @@
 
 
     <!--Breadcrumb and Sort-->
-    <section class="row col-12 d-flex justify-content-center align-items-center mx-auto my-2  p-2">
+    <section class="row col-12 d-flex justify-content-center align-items-center mx-auto my-2">
 
-      <div class="col-8 float-start">
-        <h4 class="fw-bold mb-2">Profile Details</h4>
+      <div class="col-8">
+
+        <!-- <h4 class="fw-bold">Profile Details</h4> -->
         <nav
           style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
           aria-label="breadcrumb">
@@ -100,7 +104,7 @@
             <li class="breadcrumb-item " aria-current="page"><a href="../My_Profile/index.html">My Profile</a>
             </li>
             <li class="breadcrumb-item active fw-bold" aria-current="page"><a
-                href="../My_Profile/Profile_Details.html">Profile Details</a>
+                href="../My_Profile/Order_and_Returns.html">Profile Details</a>
             </li>
           </ol>
         </nav>
@@ -108,7 +112,8 @@
       </div>
 
       <div class="col-4">
-        <button class="float-end btn">Save Changes</button>
+        <a href="" style="float: right;"><img src="../images/icons/sort_for_order_and_returns.svg"
+            style="width: 6rem; height: auto;" alt=""></a>
       </div>
 
 
@@ -122,9 +127,9 @@
 
       <div class="profile_background_image rounded-2 mb-2 mx-auto img-fluid"> </div>
 
-      <div class="row col-12 mx-auto my-2 position-relative p-2">
+      <div class="row col-12 mx-auto my-2 position-relative p-4 align-items-center">
 
-        <div class="col-4">
+        <div class="col-lg-2 col-12">
 
           <div class="position-absolute bottom-0 start-0 p-4">
 
@@ -137,15 +142,15 @@
 
         </div>
 
-        <div class="col-4">
+        <div class="col-lg-5 col-12">
 
-          <h4 class="fw-bold">Marcus</h4>
-          <i class="fa-solid fa-certificate me-2 fw-regular"></i><span class="fw-regular fw-bold">Verified
+          <h4 class="fw-bold text-start">Marcus</h4>
+          <i class="fa-solid fa-certificate me-2 fw-regular text-start"></i><span class="fw-regular fw-bold">Verified
             Customer</span>
 
         </div>
 
-        <div class="col-4">
+        <div class="col-lg-5 col-12">
 
           <!-- Button -->
           <button class="btn-paid float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit Profile</button>
@@ -161,7 +166,7 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  <div class="container-fluid">
+                  <div class="container-fluid p-4 shadow-sm bg-white">
 
                     <div class="row col-12 mx-auto">
                       <div class="col-12">
@@ -190,9 +195,9 @@
 
                   </div>
 
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                  <div class="modal-footer mx-auto justify-content-center p-4">
+                    <button type="button" class="btn btn-primary col-12">Save changes</button>
+                    <button type="button" class="btn btn-secondary col-12" data-bs-dismiss="modal">Close</button>
                   </div>
                 </div>
               </div>
@@ -201,6 +206,8 @@
           </div>
 
         </div>
+
+      </div>
 
     </section>
 
@@ -330,159 +337,213 @@
 
     <section class="my-4 col-12 jumbotron shadow">
 
-      <div class="col-12 mb-4">
-        <h4 class="fw-bold">Reviews & Activities</h4>
+      <div class="row col-12 my-2 align-items-center">
+
+        <div class="col-6 text-start">
+
+          <h4 class="fw-bold">Reviews & Activities</h4>
+
+        </div>
+
+        <div class="col-6 text-end">
+
+          <h6 class="fw-bold">Sort By: <span><a href="" class="ms-2 text-success"><i
+                  class="fa-solid fa-arrow-down-wide-short"></i></a></span>
+          </h6>
+
+        </div>
+
       </div>
-      <div class="scroll">
+
+      <div class="scroll p-4">
 
         <!--Review 1-->
 
-        <div class="row col-12 mt-2 justify-content-lg-center align-items-start mx-auto">
+        <div class="row col-12 p-2 mx-auto">
 
-          <div class="col-8">
+          <div class="row col-12 d-flex align-items-start justify-content-center mx-auto ">
 
-            <div class="bg-white mb-3 p-2 shadow-sm">
-              <div class="row g-0 align-items-center">
-                <div class="col-4">
-                  <img src="../images/items/orange.png" class="rounded-2 shadow-sm" alt="..."
-                    style="background-color: #FFE2E2; width: 128px; height: auto;">
+            <div class="col-12 p-2">
+              <a href=""><img src="../images/icons/options_for_reviews.svg" alt="" srcset="" class="float-end"></a>
+            </div>
+
+
+            <!-- Product Image -->
+
+            <div class="p-2 m-2  mx-auto">
+
+              <div class="row col-12 g-0 d-flex align-items-center p-2 mx-auto">
+
+                <div class="col-md-4 product-image rounded-2" style="background-color: #FFE2E2; ">
                 </div>
-                <div class="col-8">
-                  <h5 class="fw-bold">Oranges(1KG)</h5>
-                  <h5 class="fw-regular">18th March 2022</h5>
-                  <a href="#"><span class="fw-bold text-success me-2">Sharma Confectionaries</span></a>
-                  <a href="#"><span class="fw-bold text-success">Sharma Confectionaries</span></a>
+
+                <div class="col-md-8 ms-2">
+                  <h5 class="fw-bold text-center text-lg-start m-2">Orange (1KG)</h5>
+                  <h6 class="fw-regular text-center text-lg-start m-2">Friday 20th March,2022</h6>
+                  <h6 class="fw-bold text-success text-center text-lg-start m-2">Sharma Confectionaries Sharma
+                    Confectionaries Sharma Confectionaries</h6>
+
                 </div>
               </div>
+
             </div>
 
           </div>
 
-          <div class="col-4">
 
-            <a href=""><img src="../images/icons/options_for_reviews.svg" alt="" srcset="" class="float-end"></a>
+          <!-- Ratings and Description -->
+          <div class="col-12 mx-auto p-4 ">
 
-          </div>
+            <div class="col-12 mb-2 p-2 text-center text-lg-start ">
+              <a href=""><i class="fa fa-star checked" style="color:orange;"></i></a>
+              <a href=""><i class="fa fa-star checked" style="color:orange;"></i></a>
+              <a href=""><i class="fa fa-star checked" style="color:orange;"></i></a>
+              <a href=""><i class="fa fa-star checked" style="color:orange;"></i></a>
+              <a href=""><i class="fa fa-star checked" style="color:orange;"></i></a>
+              <h6 class="fw-bold fw-regular mb-2">You rated 4.5 out of 5</h6>
 
-          <div class="row col-12 my-2">
-            <div class="col-2 text-center"><a href=""><i class="fa fa-star checked" style="color:orange;"></i></a></div>
-            <div class="col-2 text-center"><a href=""><i class="fa fa-star checked" style="color:orange;"></i></a></div>
-            <div class="col-2 text-center"><a href=""><i class="fa fa-star checked" style="color:orange;"></i></a></div>
-            <div class="col-2 text-center"><a href=""><i class="fa fa-star checked" style="color:orange;"></i></a></div>
-          </div>
+              <div class="col-12 text-center text-lg-start">
+                <h6 class="fw-bold">Lorem ipsum dolor sit ametit.</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio facilis eligendi consectetur
+                  quibusdam recusandae, earum, eius quaerat ab vel nisi sequi mollitia praesentium placeat quasi
+                  dignissimos aliquam tempora suscipit pariatur?
+                  Iusto dolor dolores non. Nisi architecto placeat sed amet? Facere deleniti numquam, tempore placeat ea
+                  soluta labore repudiandae, laborum commodi nobis quo minima eligendi! Vel dicta soluta doloremque aut
+                  fugiat?
+                </p>
+              </div>
+            </div>
 
-          <div class="col-12">
-            <h6 class="fw-bold">Lorem ipsum dolor sit ametit.</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio facilis eligendi consectetur
-              quibusdam recusandae, earum, eius quaerat ab vel nisi sequi mollitia praesentium placeat quasi
-              dignissimos aliquam tempora suscipit pariatur?
-              Iusto dolor dolores non. Nisi architecto placeat sed amet? Facere deleniti numquam, tempore placeat ea
-              soluta labore repudiandae, laborum commodi nobis quo minima eligendi! Vel dicta soluta doloremque aut
-              fugiat?
-            </p>
           </div>
 
         </div>
 
         <hr class="lines">
 
-        <div class="row col-12 mt-2 justify-content-lg-center align-items-start mx-auto">
+        <!--Review 2-->
 
-          <div class="col-8">
+        <div class="row col-12 p-2 mx-auto">
 
-            <div class="bg-white mb-3 p-2 shadow-sm">
-              <div class="row g-0 align-items-center">
-                <div class="col-4">
-                  <img src="../images/items/orange.png" class="rounded-2 shadow-sm" alt="..."
-                    style="background-color: #FFE2E2; width: 128px; height: auto;">
+          <div class="row col-12 d-flex align-items-start justify-content-center mx-auto ">
+
+            <div class="col-12 p-2">
+              <a href=""><img src="../images/icons/options_for_reviews.svg" alt="" srcset="" class="float-end"></a>
+            </div>
+
+
+            <!-- Product Image -->
+
+            <div class="p-2 m-2  mx-auto">
+
+              <div class="row col-12 g-0 d-flex align-items-center p-2 mx-auto">
+
+                <div class="col-md-4 product-image rounded-2" style="background-color: #FFE2E2; ">
                 </div>
-                <div class="col-8">
-                  <h5 class="fw-bold">Oranges(1KG)</h5>
-                  <h5 class="fw-regular">18th March 2022</h5>
-                  <a href="#"><span class="fw-bold text-success me-2">Sharma Confectionaries</span></a>
-                  <a href="#"><span class="fw-bold text-success">Sharma Confectionaries</span></a>
+
+                <div class="col-md-8 ms-2">
+                  <h5 class="fw-bold text-center text-lg-start m-2">Orange (1KG)</h5>
+                  <h6 class="fw-regular text-center text-lg-start m-2">Friday 20th March,2022</h6>
+                  <h6 class="fw-bold text-success text-center text-lg-start m-2">Sharma Confectionaries Sharma
+                    Confectionaries Sharma Confectionaries</h6>
+
                 </div>
               </div>
+
             </div>
 
           </div>
 
-          <div class="col-4">
 
-            <a href=""><img src="../images/icons/options_for_reviews.svg" alt="" srcset="" class="float-end"></a>
+          <!-- Ratings and Description -->
+          <div class="col-12 mx-auto p-4 ">
 
-          </div>
+            <div class="col-12 mb-2 p-2 text-center text-lg-start ">
+              <a href=""><i class="fa fa-star checked" style="color:orange;"></i></a>
+              <a href=""><i class="fa fa-star checked" style="color:orange;"></i></a>
+              <a href=""><i class="fa fa-star checked" style="color:orange;"></i></a>
+              <a href=""><i class="fa fa-star checked" style="color:orange;"></i></a>
+              <a href=""><i class="fa fa-star checked" style="color:orange;"></i></a>
+              <h6 class="fw-bold fw-regular mb-2">You rated 4.5 out of 5</h6>
 
-          <div class="row col-12 my-2">
-            <div class="col-2 text-center"><a href=""><i class="fa fa-star checked" style="color:orange;"></i></a></div>
-            <div class="col-2 text-center"><a href=""><i class="fa fa-star checked" style="color:orange;"></i></a></div>
-            <div class="col-2 text-center"><a href=""><i class="fa fa-star checked" style="color:orange;"></i></a></div>
-            <div class="col-2 text-center"><a href=""><i class="fa fa-star checked" style="color:orange;"></i></a></div>
-          </div>
+              <div class="col-12 text-center text-lg-start">
+                <h6 class="fw-bold">Lorem ipsum dolor sit ametit.</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio facilis eligendi consectetur
+                  quibusdam recusandae, earum, eius quaerat ab vel nisi sequi mollitia praesentium placeat quasi
+                  dignissimos aliquam tempora suscipit pariatur?
+                  Iusto dolor dolores non. Nisi architecto placeat sed amet? Facere deleniti numquam, tempore placeat ea
+                  soluta labore repudiandae, laborum commodi nobis quo minima eligendi! Vel dicta soluta doloremque aut
+                  fugiat?
+                </p>
+              </div>
+            </div>
 
-          <div class="col-12">
-            <h6 class="fw-bold">Lorem ipsum dolor sit ametit.</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio facilis eligendi consectetur
-              quibusdam recusandae, earum, eius quaerat ab vel nisi sequi mollitia praesentium placeat quasi
-              dignissimos aliquam tempora suscipit pariatur?
-              Iusto dolor dolores non. Nisi architecto placeat sed amet? Facere deleniti numquam, tempore placeat ea
-              soluta labore repudiandae, laborum commodi nobis quo minima eligendi! Vel dicta soluta doloremque aut
-              fugiat?
-            </p>
           </div>
 
         </div>
 
         <hr class="lines">
 
-        <div class="row col-12 mt-2 justify-content-lg-center align-items-start mx-auto">
+        <!--Review 3-->
 
-          <div class="col-8">
+        <div class="row col-12 p-2 mx-auto">
 
-            <div class="bg-white mb-3 p-2 shadow-sm">
-              <div class="row g-0 align-items-center">
-                <div class="col-4">
-                  <img src="../images/items/orange.png" class="rounded-2 shadow-sm" alt="..."
-                    style="background-color: #FFE2E2; width: 128px; height: auto;">
+          <div class="row col-12 d-flex align-items-start justify-content-center mx-auto ">
+
+            <div class="col-12 p-2">
+              <a href=""><img src="../images/icons/options_for_reviews.svg" alt="" srcset="" class="float-end"></a>
+            </div>
+
+
+            <!-- Product Image -->
+
+            <div class="p-2 m-2  mx-auto">
+
+              <div class="row col-12 g-0 d-flex align-items-center p-2 mx-auto">
+
+                <div class="col-md-4 product-image rounded-2" style="background-color: #FFE2E2; ">
                 </div>
-                <div class="col-8">
-                  <h5 class="fw-bold">Oranges(1KG)</h5>
-                  <h5 class="fw-regular">18th March 2022</h5>
-                  <a href="#"><span class="fw-bold text-success me-2">Sharma Confectionaries</span></a>
-                  <a href="#"><span class="fw-bold text-success">Sharma Confectionaries</span></a>
+
+                <div class="col-md-8 ms-2">
+                  <h5 class="fw-bold text-center text-lg-start m-2">Orange (1KG)</h5>
+                  <h6 class="fw-regular text-center text-lg-start m-2">Friday 20th March,2022</h6>
+                  <h6 class="fw-bold text-success text-center text-lg-start m-2">Sharma Confectionaries Sharma
+                    Confectionaries Sharma Confectionaries</h6>
+
                 </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- Ratings and Description -->
+          <div class="col-12 mx-auto p-4 ">
+
+            <div class="col-12 mb-2 p-2 text-center text-lg-start ">
+              <a href=""><i class="fa fa-star checked" style="color:orange;"></i></a>
+              <a href=""><i class="fa fa-star checked" style="color:orange;"></i></a>
+              <a href=""><i class="fa fa-star checked" style="color:orange;"></i></a>
+              <a href=""><i class="fa fa-star checked" style="color:orange;"></i></a>
+              <a href=""><i class="fa fa-star checked" style="color:orange;"></i></a>
+              <h6 class="fw-bold fw-regular mb-2">You rated 4.5 out of 5</h6>
+
+              <div class="col-12 text-center text-lg-start">
+                <h6 class="fw-bold">Lorem ipsum dolor sit ametit.</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio facilis eligendi consectetur
+                  quibusdam recusandae, earum, eius quaerat ab vel nisi sequi mollitia praesentium placeat quasi
+                  dignissimos aliquam tempora suscipit pariatur?
+                  Iusto dolor dolores non. Nisi architecto placeat sed amet? Facere deleniti numquam, tempore placeat ea
+                  soluta labore repudiandae, laborum commodi nobis quo minima eligendi! Vel dicta soluta doloremque aut
+                  fugiat?
+                </p>
               </div>
             </div>
 
           </div>
 
-          <div class="col-4">
-
-            <a href=""><img src="../images/icons/options_for_reviews.svg" alt="" srcset="" class="float-end"></a>
-
-          </div>
-
-          <div class="row col-12 my-2">
-            <div class="col-2 text-center"><a href=""><i class="fa fa-star checked" style="color:orange;"></i></a></div>
-            <div class="col-2 text-center"><a href=""><i class="fa fa-star checked" style="color:orange;"></i></a></div>
-            <div class="col-2 text-center"><a href=""><i class="fa fa-star checked" style="color:orange;"></i></a></div>
-            <div class="col-2 text-center"><a href=""><i class="fa fa-star checked" style="color:orange;"></i></a></div>
-          </div>
-
-          <div class="col-12">
-            <h6 class="fw-bold">Lorem ipsum dolor sit ametit.</h6>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio facilis eligendi consectetur
-              quibusdam recusandae, earum, eius quaerat ab vel nisi sequi mollitia praesentium placeat quasi
-              dignissimos aliquam tempora suscipit pariatur?
-              Iusto dolor dolores non. Nisi architecto placeat sed amet? Facere deleniti numquam, tempore placeat ea
-              soluta labore repudiandae, laborum commodi nobis quo minima eligendi! Vel dicta soluta doloremque aut
-              fugiat?
-            </p>
-          </div>
-
         </div>
 
-      </div>
 
 
 
@@ -495,9 +556,10 @@
 
   <footer class="footer-panel d-sm-none d-lg-block d-md-block">
 
-    <div class="container py-5 my-5">
+    <div class="container p-4 my-5">
 
-      <div class="row py-3">
+      <div class="row p-2 m-2">
+
         <div class="col-lg-4 col-md-6 col-12 mb-lg-0">
           <h6 class="mb-2"><img src="../images/Logo_footer.svg" width="256px" height="auto" alt=""></h6>
           <p class="text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
@@ -513,17 +575,17 @@
             555-0108</p>
 
           <!-- <ul class="list-inline mt-4">
-              <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i
-                    class="fa-2x fa-twitter"></i></a></li>
-              <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i
-                    class="fab fa-2x fa-facebook-f"></i></a></li>
-              <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i
-                    class="fab fa-2x fa-instagram"></i></a></li>
-              <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i
-                    class="fab fa-2x fa-youtube"></i></a></li>
-              <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i
-                    class="fab fa-2x fa-google"></i></a></li>
-            </ul> -->
+        <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i
+              class="fa-2x fa-twitter"></i></a></li>
+        <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i
+              class="fab fa-2x fa-facebook-f"></i></a></li>
+        <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i
+              class="fab fa-2x fa-instagram"></i></a></li>
+        <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i
+              class="fab fa-2x fa-youtube"></i></a></li>
+        <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i
+              class="fab fa-2x fa-google"></i></a></li>
+      </ul> -->
         </div>
         <div class="col-lg-2 col-md-6 mb-4 mt-4 mb-lg-0">
           <h6 class="text-uppercase font-weight-bold mb-4">Useful Links</h6>
@@ -566,14 +628,14 @@
 
     </div>
 
-    <hr class="p-0 m-0 b-0">
 
     <div class="py-2 mb-8 col-12 col-lg-12">
       <div class="container text-center text-lg-center">
-        <p class="text-white  font-weight-bold mb-10 py-2"><span>MyMarket 2021. All Rights reserved</span>
+        <p class="text-white  font-weight-bold mb-10 py-2">&copy; <span>MyMarket 2021. All Rights reserved</span>
         </p>
       </div>
     </div>
+
   </footer>
 
   </div>
