@@ -120,12 +120,9 @@ body {
 
 /* Images */
 .carousel-inner {
-  height: auto;
-  min-height: 15vh;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  min-width: 400px;
   background-size: cover;
+  object-fit: cover;
 }
 
 /* Caption container */
