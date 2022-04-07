@@ -18,22 +18,96 @@ body {
 /* ///Media Queries/// */
 
 /* small devices */
-
 @media (min-width: 370px) {
+  .container {
+    padding: 0.2 rem;
+    margin: 0 auto;
+  }
+
+  .col {
+    width: 25%;
+  }
+
+  h3,
   h4,
   h5,
   h6 {
-    font-size: 1.2rem;
+    font-size: 0.75rem;
   }
-  .container {
-    padding: 0.5 rem;
-    margin: 0 auto;
+
+  p {
+    font-size: 0.8rem;
   }
 
   .svg-icon {
     width: 48px;
     height: auto;
-    padding: 1rem;
+    padding: 0.75rem;
+  }
+
+  /* Images */
+  .carousel-inner {
+    min-width: 200px;
+    background-size: cover;
+    object-fit: cover;
+  }
+
+  /* Caption container */
+  .carousel-item {
+    position: relative;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    top: 50px;
+    left: 50px;
+    right: -50px;
+    bottom: auto;
+    padding: 4rem;
+    background-color: #434343e1;
+    box-shadow: 0px 2px 15px 15px rgba(0, 0, 0, 0.144);
+    border-radius: 1rem;
+    margin: 1rem;
+  }
+
+  /* Product Image */
+
+  .product-image {
+    background-image: url(images/items/orange.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    max-width: 85px;
+    min-height: 85px;
+    image-rendering: -webkit-optimize-contrast;
+  }
+
+  /* Jumbotron */
+
+  .jumbotron {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-in;
+    width: auto;
+    height: auto;
+  }
+
+  /* Box-container */
+  .box-container {
+    background-color: white;
+    padding: 0.85rem;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.061);
+    border-radius: 0.75rem;
+  }
+
+  /* Item image */
+  .item-image {
+    width: 72px;
+    height: auto;
   }
 }
 
@@ -54,6 +128,33 @@ body {
     height: auto;
     padding: 1rem;
   }
+
+  /* Images */
+  .carousel-inner {
+    min-width: 200px;
+    background-size: cover;
+    object-fit: cover;
+  }
+
+  /* Caption container */
+
+  .carousel-item {
+    position: relative;
+  }
+  .carousel-caption {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    top: 50px;
+    left: 50px;
+    right: -50px;
+    bottom: auto;
+    padding: 4rem;
+    background-color: #434343e1;
+    box-shadow: 0px 2px 15px 15px rgba(0, 0, 0, 0.144);
+    border-radius: 1rem;
+    margin: 1rem;
+  }
 }
 
 /* medium devices */
@@ -61,7 +162,7 @@ body {
   h4,
   h5,
   h6 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .container {
@@ -74,14 +175,43 @@ body {
     height: auto;
     padding: 1rem;
   }
+
+  /* Images */
+  .carousel-inner {
+    min-width: 400px;
+    background-size: cover;
+    object-fit: cover;
+  }
+
+  /* Caption container */
+
+  .carousel-item {
+    position: relative;
+  }
+  .carousel-caption {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    top: 50px;
+    left: 50px;
+    right: -50px;
+    bottom: auto;
+    padding: 4rem;
+    background-color: #434343e1;
+    box-shadow: 0px 2px 15px 15px rgba(0, 0, 0, 0.144);
+    border-radius: 1rem;
+    margin: 1rem;
+  }
 }
 
 /* large devices */
 @media (min-width: 950px) {
+  h3,
   h4,
   h5,
   h6 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    padding: 0.2rem;
   }
 
   .container {
@@ -89,61 +219,91 @@ body {
     margin: 0 auto;
   }
 
-  .svg-icon {
-    width: 64px;
-    height: auto;
-    padding: 1rem;
+  .col {
+    width: 100%;
   }
-}
 
-/* extra large devices */
-@media (min-width: 1200px) {
-  h4,
-  h5,
-  h6 {
+  p {
     font-size: 1rem;
   }
-
-  .container {
-    padding: 1rem;
-    margin: 0 auto;
-  }
-
   .svg-icon {
     width: 64px;
     height: auto;
     padding: 1rem;
+  }
+
+  /* Images */
+  .carousel-inner {
+    min-width: 200px;
+    background-size: cover;
+    object-fit: cover;
+  }
+
+  /* Caption container */
+
+  .carousel-item {
+    position: relative;
+  }
+  .carousel-caption {
+    position: absolute;
+    width: 300px;
+    min-height: 250px;
+    top: 50px;
+    left: 50px;
+    right: -50px;
+    bottom: auto;
+    padding: 4rem;
+    background-color: #434343e1;
+    box-shadow: 0px 2px 15px 15px rgba(0, 0, 0, 0.144);
+    border-radius: 1rem;
+    margin: 1rem;
+  }
+
+  /* Jumbotron */
+
+  .jumbotron {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease-in;
+    width: auto;
+    height: auto;
+  }
+
+  .jumbotron:hover {
+    border: 2px solid #53b175;
+    transition: all 0.5s ease-out;
+  }
+
+  /* Product Image */
+
+  .product-image {
+    background-image: url(images/items/orange.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    max-width: 150px;
+    min-height: 150px;
+    image-rendering: -webkit-optimize-contrast;
+  }
+
+  /* Box-container */
+  .box-container {
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.061);
+    border-radius: 0.75rem;
+  }
+
+  /* Item image */
+  .item-image {
+    width: 128px;
+    height: auto;
   }
 }
 
 /* Carousel  */
-
-/* Images */
-.carousel-inner {
-  min-width: 400px;
-  background-size: cover;
-  object-fit: cover;
-}
-
-/* Caption container */
-
-.carousel-item {
-  position: relative;
-}
-.carousel-caption {
-  position: absolute;
-  width: 400px;
-  height: auto;
-  top: 50px;
-  left: 50px;
-  right: -50px;
-  bottom: auto;
-  padding: 4rem;
-  background-color: #434343e1;
-  box-shadow: 0px 2px 15px 15px rgba(0, 0, 0, 0.144);
-  border-radius: 1rem;
-  margin: 1rem;
-}
 
 /* Forms */
 .form-select {
@@ -152,14 +312,14 @@ body {
 
 /* Links */
 
-/* .navbar-link :active {
+.navbar-link :active {
   border-bottom: 5px solid #53b175;
   padding: 1rem;
 }
 
 .navbar-link:hover {
   border-bottom: 5px solid #53b175;
-} */
+}
 
 a {
   color: #53b175;
@@ -179,6 +339,7 @@ a:focus {
 }
 
 /* Breadcrumb */
+
 .breadcrumb-item + .breadcrumb-item::before {
   content: ">";
   color: #53b175;
@@ -366,34 +527,6 @@ li {
 .fa {
   font-size: 18px;
   font-weight: 600;
-}
-
-/* Jumbotron */
-
-.jumbotron {
-  background-color: #ffffff;
-  border-radius: 1rem;
-  padding: 1.85rem;
-}
-
-/* Box-container */
-.box-container {
-  background-color: white;
-  padding: 2rem;
-  box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.061);
-  border-radius: 0.75rem;
-}
-
-/* Product Image */
-
-.product-image {
-  background-image: url(images/items/orange.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  max-width: 150px;
-  min-height: 150px;
-  image-rendering: -webkit-optimize-contrast;
 }
 
 /* Profile Background Image */
