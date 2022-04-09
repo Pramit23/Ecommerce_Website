@@ -18,21 +18,24 @@ body {
 /* ///Media Queries/// */
 
 /* small devices */
-@media (min-width: 370px) {
+@media (min-width: 350px) {
   .container {
     padding: 0.2 rem;
     margin: 0 auto;
   }
 
   .col {
-    width: 25%;
+    width: 50%;
   }
 
   h3 {
     font-size: 1.5rem;
   }
 
-  h4,
+  h4 {
+    font-size: 1rem;
+  }
+
   h5,
   h6 {
     font-size: 0.8rem;
@@ -91,12 +94,11 @@ body {
 
   .jumbotron {
     background-color: #ffffff;
-    border-radius: 0.75rem;
+    border-radius: 0.5rem;
     padding: 0.75rem;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     transition: all 200ms ease-in;
     width: auto;
-    height: auto;
   }
 
   /* Box-container */
@@ -109,7 +111,7 @@ body {
 
   /* Item image */
   .item-image {
-    width: 72px;
+    width: 82px;
     height: auto;
   }
 
@@ -163,6 +165,20 @@ body {
     border-radius: 1rem;
     margin: 1rem;
   }
+
+  /* Box-container */
+  .box-container {
+    background-color: white;
+    padding: 0.85rem;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.061);
+    border-radius: 0.75rem;
+  }
+
+  /* Item image */
+  .item-image {
+    width: 100px;
+    height: auto;
+  }
 }
 
 /* medium devices */
@@ -210,6 +226,20 @@ body {
     border-radius: 1rem;
     margin: 1rem;
   }
+
+  /* Box-container */
+  .box-container {
+    background-color: white;
+    padding: 0.85rem;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.061);
+    border-radius: 0.75rem;
+  }
+
+  /* Item image */
+  .item-image {
+    width: 150px;
+    height: auto;
+  }
 }
 
 /* large devices */
@@ -218,8 +248,8 @@ body {
   h4,
   h5,
   h6 {
-    font-size: 1.5rem;
-    padding: 1rem;
+    font-size: 1rem;
+    padding: 0.5rem;
   }
 
   .container {
@@ -299,14 +329,13 @@ body {
   /* Box-container */
   .box-container {
     background-color: white;
-    padding: 2rem;
     box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.061);
     border-radius: 0.75rem;
   }
 
   /* Item image */
   .item-image {
-    width: 128px;
+    width: 200px;
     height: auto;
   }
 }
@@ -356,7 +385,7 @@ a:focus {
   color: #53b175;
   padding: 0 5px;
   margin: 0 5px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .breadcrumb-item {
@@ -412,6 +441,39 @@ a:focus {
   width: 128px;
   height: auto;
   image-rendering: -webkit-optimize-contrast;
+}
+
+/* Primary Button */
+
+.btn,
+.btn-primary {
+  color: white;
+  background-color: #53b175;
+  border: none;
+  font-weight: 600;
+  padding: 0.75em;
+}
+.btn-lg {
+  color: white;
+  background-color: #53b175;
+  font-weight: 600;
+  border: none;
+  padding: 1em;
+  transition: all 500ms ease-in;
+  /* transform: scale(0.8); */
+}
+
+.btn:hover,
+.btn-primary:hover,
+.btn-lg:hover,
+.btn-lg:focus,
+.btn-lg:active {
+  color: #65c287;
+  border: 2px solid #65c287;
+  padding: 1em;
+  background-color: white;
+  transition: all 500ms ease-out;
+  /* transform: scale(1); */
 }
 
 /* Horizontal lines */
@@ -547,31 +609,6 @@ li {
   object-position: center top;
   width: auto;
   height: 300px;
-}
-
-/* Primary Button */
-
-.btn,
-.btn-lg {
-  color: white;
-  background-color: #53b175;
-  font-weight: 600;
-  border: none;
-  padding: 1em;
-  transition: all 500ms ease-in;
-  transform: scale(0.8);
-}
-
-.btn:hover,
-.btn-lg:hover,
-.btn-lg:focus,
-.btn-lg:active {
-  color: #65c287;
-  border: 2px solid #65c287;
-  padding: 1em;
-  background-color: white;
-  transition: all 500ms ease-out;
-  transform: scale(1);
 }
 
 /* Secondary Button */
