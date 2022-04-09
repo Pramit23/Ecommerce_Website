@@ -28,11 +28,14 @@ body {
     width: 25%;
   }
 
-  h3,
+  h3 {
+    font-size: 1.5rem;
+  }
+
   h4,
   h5,
   h6 {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
 
   p {
@@ -91,7 +94,7 @@ body {
     border-radius: 0.75rem;
     padding: 0.75rem;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-    transition: all 0.5s ease-in;
+    transition: all 200ms ease-in;
     width: auto;
     height: auto;
   }
@@ -108,6 +111,11 @@ body {
   .item-image {
     width: 72px;
     height: auto;
+  }
+
+  .scroll {
+    padding: 3rem;
+    margin: auto;
   }
 }
 
@@ -210,8 +218,8 @@ body {
   h4,
   h5,
   h6 {
-    font-size: 1.2rem;
-    padding: 0.2rem;
+    font-size: 1.5rem;
+    padding: 1rem;
   }
 
   .container {
@@ -266,14 +274,14 @@ body {
     border-radius: 0.75rem;
     padding: 1rem;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-    transition: all 0.5s ease-in;
+    transition: all 200ms ease-in;
     width: auto;
     height: auto;
   }
 
   .jumbotron:hover {
     border: 2px solid #53b175;
-    transition: all 0.5s ease-out;
+    transition: all 200ms ease-out;
   }
 
   /* Product Image */
@@ -312,13 +320,16 @@ body {
 
 /* Links */
 
-.navbar-link :active {
+.favorite-link:active,
+.favorite-link:focus,
+.favorite-link:visited {
   border-bottom: 5px solid #53b175;
   padding: 1rem;
 }
 
-.navbar-link:hover {
+.favorite-link:hover {
   border-bottom: 5px solid #53b175;
+  padding: 1rem;
 }
 
 a {
@@ -583,6 +594,15 @@ li {
   font-weight: bold;
   transition: 800ms;
   box-shadow: 0px 1px 25px rgba(0, 0, 0, 0.144);
+}
+
+.btn-dropdown {
+  border: none;
+  background: linear-gradient(
+    18deg,
+    rgba(251, 253, 255, 1) 1%,
+    rgba(250, 252, 254, 1) 100%
+  );
 }
 
 /* Popover Button */

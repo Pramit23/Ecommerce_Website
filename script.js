@@ -9,9 +9,9 @@ myModal.addEventListener("shown.bs.modal", function () {
 });
 
 //Popover Trigger
-const popoverTriggerList = [].slice.call(
-  document.querySelectorAll("[data-bs-toggle='popover']")
+let popoverTriggerList = [].slice.call(
+  document.querySelectorAll('[data-bs-toggle="popover"]')
 );
-const popoverList = popoverTriggerList.map(
-  (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
-);
+let popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl);
+});
